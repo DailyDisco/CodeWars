@@ -352,3 +352,12 @@ function warnTheSheep(queue) {
     }! You are about to be eaten by a wolf!`;
   }
 }
+
+// Grasshopper - Array Mean (8 Kyu)
+
+var findAverage = function (nums) {
+  // Code here
+  // create an average variable that takes nums and reduces it (adds it up) and then divide that by the length of nums (amount of values) to get the average
+  const average = (nums = nums.reduce((a, b) => a + b) / nums.length);
+  return average;
+};
