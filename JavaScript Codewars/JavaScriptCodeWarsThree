@@ -361,3 +361,21 @@ var findAverage = function (nums) {
   const average = (nums = nums.reduce((a, b) => a + b) / nums.length);
   return average;
 };
+
+// Remove anchor from URL (7 Kyu)
+
+function removeUrlAnchor(url) {
+  // TODO: complete
+  let split = url.split('');
+  let adjusted = '';
+
+  for (let i = 0; i < split.length; i++) {
+    // if the character in the url is = too a #
+    if (split[i] === '#') {
+      // slice off the rest of the url at that index
+      adjusted = split.splice(i);
+    }
+  }
+  // return the joined original str
+  return split.join('');
+}
