@@ -477,3 +477,11 @@ function getSize(width, height, depth) {
   // define the volume of a box formula
   return [area, width * height * depth];
 }
+
+// Merge two sorted arrays into one (8 Kyu)
+function mergeArrays(arr1, arr2) {
+  let newArr = [...arr1, ...arr2];
+
+  // using ... new Set you get rid of any duplicates in the combined array
+  return [...new Set(newArr.sort((a, b) => a - b))];
+}
