@@ -282,3 +282,13 @@ function multiTable(number) {
     .map((item) => `${item} * ${number} = ${item * number}`)
     .join('\n');
 }
+
+// Area or Perimeter (8 Kyu)
+const areaOrPerimeter = function (l, w) {
+  // Return your answer
+  if (l == w) {
+    return l * w;
+  } else {
+    return (l + w) * 2;
+  }
+};
