@@ -292,3 +292,10 @@ const areaOrPerimeter = function (l, w) {
     return (l + w) * 2;
   }
 };
+
+// Array.diff (6 Kyu)
+
+function arrayDiff(a, b) {
+  // Filter through the array and only return the val of a if b does not include the value of a
+  return a.filter((val) => !b.includes(val));
+}
