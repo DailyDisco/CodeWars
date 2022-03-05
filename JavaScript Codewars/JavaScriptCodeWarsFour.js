@@ -175,3 +175,13 @@ function position(letter) {
   //Write your own Code!
   return `Position of alphabet: ${letter.charCodeAt() - 96}`;
 }
+
+// Greet Me level 7 Kyu
+
+var greet = function (name) {
+  let firstLetter = name.slice(0, 1).toUpperCase();
+  console.log(firstLetter);
+  let restOfWord = name.slice(1, 1000).toLowerCase();
+  console.log(restOfWord);
+  return `Hello ${firstLetter + restOfWord}!`;
+};
