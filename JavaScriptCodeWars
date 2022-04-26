@@ -176,3 +176,80 @@ function getGrade (s1, s2, s3) {
     return 'F';
   }
 }
+
+
+
+
+
+// remove character from a string
+
+// first we set our new string equal to each individual character of the original string
+// then we use newStr.shift(); to remove the first character of the string.
+// then we use the newStr.pop() to remove the last character of the string.
+// then we return newStr.join("") to return the string as a one complete string.
+
+function removeChar(str){
+ //You got this!
+  newStr = str.split("");
+  newStr.shift();
+  newStr.pop();
+  return newStr.join("");
+  
+};
+
+
+
+
+
+// double a given integer
+
+function doubleInteger(i) {
+  // i will be an integer. Double it and return it.
+  i = i * 2;
+  return i;
+}
+
+
+
+
+
+// count and array of sheep filled with true and false, true meaning there's a sheep there.
+
+function countSheeps(arrayOfSheep) {
+  // TODO May the force be with you
+
+  var num = 0;
+  for (let i = 0; i < arrayOfSheep.length; i++) {
+    if (arrayOfSheep[i] == true) {
+      num++;
+    }
+  }
+  return num;
+}
+
+
+
+
+
+//does the string have the same amount of x's and o's irrelavent to capitalization
+
+function XO(str) {
+    //code here
+  
+  let o = 0;
+  let x = 0;
+  
+  // we create a for loop so that it can run as long as there's more in the array
+  // we use .toLowerCase() to change the string to all lower case to account for case;
+  // at the end we return the comparison between the count for x and the count for o 
+  
+  for (let i = 0; i < str.length; i++) {
+    if (str[i].toLowerCase() == "o") {
+      o++;
+    } else if (str[i].toLowerCase() == "x") {
+      x++;
+    }
+  }
+  
+  return x == o;
+}
