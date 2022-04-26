@@ -1,0 +1,178 @@
+// convert time into milliseconds
+
+function past(h, m, s){
+  //#Happy Coding! ^_^
+  
+  convertHours = (h * 60 * 60 * 1000);
+  convertMinutes = (m * 60 * 1000);
+  convertSeconds = (s * 1000);
+  
+  result = convertHours + convertMinutes + convertSeconds;
+  return result;
+}
+
+// we multiply numbers by 60 to convert them into smaller parts of a whole (minutes -> seconds)
+// we then multiply by 1000 because there are 1000 ms in a s rather than 60 s in a m.
+
+
+
+
+
+// greet who?
+
+function greet (name, owner) {
+  // Add code here
+  if (name == owner) {
+    return 'Hello boss';
+  }
+  return 'Hello guest';
+}
+
+
+
+
+
+// how to reverse the characters then words in a string
+
+function reverseWords(str) {
+  // Go for it
+  
+  return str.split('').reverse().join('').split(' ').reverse().join(' ');
+  // this returns the string first split at each character (including spaces), then each
+  // character is reversed, following by the characters being joined together.
+  // then we repeat those steps but we start by seperating at each word then reversing the
+  // words.
+}
+
+
+
+
+
+// converts a number to a stringer
+
+function numberToString(num) {
+  // Return a string of the number here!
+  
+return num.toString();
+// the .toString() converts numbers into strings.
+}
+
+
+
+
+
+// javascript even or odd number
+
+function even_or_odd(number) {
+  if ((number % 2) == 0) {
+    return "Even"
+  }
+  return "Odd"
+}
+
+
+
+
+
+// javascript rock, paper, scissors
+
+const rps = (p1, p2) => {
+ if (p1 == p2) {
+   return "Draw!";
+ }else if (p1 == 'rock' && p2 == 'scissors') {
+   return "Player 1 won!";
+ }else if (p1 == 'paper' && p2 == 'rock') {
+   return "Player 1 won!";
+ }else if (p1 == 'scissors' && p2 == 'paper') {
+   return "Player 1 won!";
+}else {
+  return "Player 2 won!";
+}
+};
+
+
+
+
+
+// golf game scores
+
+const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+function golfScore(par, strokes) {
+  // Only change code below this line
+  if (strokes == 1) {
+    return "Hole-in-one!"
+  } else if (strokes <= (par - 2)){
+    return "Eagle"
+  } else if (strokes == (par - 1)) {
+    return "Birdie"
+  } else if (strokes == par) {
+    return "Par"
+  } else if (strokes == (par + 1)) {
+    return "Bogey"
+  } else if (strokes == (par + 2)) {
+    return "Double Bogey"
+  } else if (strokes >= (par + 3)) {
+    return "Go Home!"
+  }else {
+
+  return "Change Me";
+  // Only change code above this line
+}
+}
+golfScore(5, 4);
+
+
+
+
+// pull the middle letters of a string out of the string and only pull 1 if odd or 2 if even
+
+function getMiddle(s) {
+  //Code goes here!
+  let position
+  let length
+  
+  if (s.length % 2 == 1) {
+    position = s.length / 2;
+    length = 1;
+  } else {
+    position = s.length / 2 - 1;
+    length = 2;
+  }
+  
+
+  // the .substring method is used to create a string out of a string using certain parameters
+  return s.substring(position, position + length);
+
+}
+
+
+
+
+// convert a string to a number using parseInt()
+
+var stringToNumber = function(str){
+  // put your code here
+  return parseInt(str)
+}
+
+
+
+
+// sums up three grades and divides them for an average, then gives the grades
+
+function getGrade (s1, s2, s3) {
+  // Code here
+  average = (s1 + s2 + s3) / 3;
+  if (average >= 90 && average <= 100) {
+    return 'A';
+  } else if (average >= 80 && average < 90) {
+    return 'B';
+  } else if (average >= 70  && average < 80) {
+    return 'C';
+  } else if (average >= 60 && average < 70) {
+    return 'D';
+  } else {
+    return 'F';
+  }
+}
