@@ -253,3 +253,35 @@ function XO(str) {
   
   return x == o;
 }
+
+
+
+
+
+// create a function that returns 'hello world!'
+
+function greet() {
+    return "hello world!";
+  }
+
+
+
+
+// make the first letter of each word in a string capitalized (JadenCase)
+
+String.prototype.toJadenCase = function () {
+  
+  // we declare new string to put in the desired contents
+  var newStr = "";
+  
+  
+  // we split the inputed string at each space between words
+  // we use forEach to say that for each str item given in the variable
+    // newStr will = newStr + space + strings and use toUpperCase() to capitalize the first letters of each word
+  // we must then add that new string to the old string IN the new array.
+  this.split(" ").forEach(function(s) { 
+      newStr = newStr + " " + s.substring(0,1).toUpperCase() + s.substring(1); 
+  });
+
+  return newStr.substr(1);
+};
