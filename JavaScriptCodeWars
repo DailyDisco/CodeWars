@@ -308,3 +308,46 @@ function findShort(s){
   let arr = s.split(" ").sort((a, b) => a.length - b.length);
   return arr[0].length;
 }
+
+
+
+
+
+
+function howMuchILoveYou(nbPetals) {
+    // your code
+  if (nbPetals % 6 == 1) {
+    return "I love you";
+  } else if (nbPetals % 6 == 2) {
+    return "a little";
+  } else if (nbPetals % 6 == 3) {
+    return "a lot";
+  } else if (nbPetals % 6 == 4) {
+    return "passionately";
+  } else if (nbPetals % 6 == 5) {
+    return "madly";
+  } else {
+    return ("not at all");
+  }
+} 
+
+
+
+
+// create a function where the animals name's first and last characters and their 
+// corresponding dish's first and last letters match.
+
+function feast(beast, dish) {
+//your function here
+  lastLetterBeast = beast.charAt(beast.length - 1)
+  lastLetterDish = dish.charAt(dish.length - 1)
+  
+  firstLetterBeast = beast.charAt(0);
+  firstLetterDish = dish.charAt(0);
+  
+  if (lastLetterBeast == lastLetterDish && firstLetterBeast == firstLetterDish) {
+    return true;
+  } else {
+    return false
+  }
+}
