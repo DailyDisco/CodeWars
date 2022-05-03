@@ -351,3 +351,25 @@ function feast(beast, dish) {
     return false
   }
 }
+
+
+
+
+// create a function that squares each digit in a argument and use catotination to combine 
+  // the results
+function squareDigits(num){
+  
+  let numStr = num.toString();
+  
+  let squaredFinal = '';
+  
+  // create a for loop that will run for the amount of digits
+  for (let i = 0; i < numStr.length; i++) {
+    // set the squaredFinal string = to the current total + the digit as a integer 
+     squaredFinal = squaredFinal + (parseInt(numStr[i])**2 + "");
+  }
+  
+  
+  //make the final string into an integer
+  return parseInt(squaredFinal);
+}
