@@ -373,3 +373,22 @@ function squareDigits(num){
   //make the final string into an integer
   return parseInt(squaredFinal);
 }
+
+
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  // code goes here
+  totalGoals = (laLigaGoals + copaDelReyGoals + championsLeagueGoals);
+  return totalGoals;
+}
+
+
+
+
+
+
+// create a function that returns Messi's goals across the league.
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  // code goes here
+  totalGoals = (laLigaGoals + copaDelReyGoals + championsLeagueGoals);
+  return totalGoals;
+}
