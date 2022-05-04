@@ -375,13 +375,6 @@ function squareDigits(num){
 }
 
 
-function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
-  // code goes here
-  totalGoals = (laLigaGoals + copaDelReyGoals + championsLeagueGoals);
-  return totalGoals;
-}
-
-
 
 
 
