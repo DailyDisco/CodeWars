@@ -385,3 +385,31 @@ function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   totalGoals = (laLigaGoals + copaDelReyGoals + championsLeagueGoals);
   return totalGoals;
 }
+
+
+
+
+
+// create a function that return true or false based on the status of the boolean
+
+function boolToWord( bool ){
+  //...
+  if (bool == true) {
+    return "Yes";
+  } else {
+    return "No";
+  }
+}
+
+
+
+
+
+//create a function that returns a number in an array, reveresed.
+function digitize(n) {
+  //code here
+  toArr = n.toString().split("").reverse().map(Number);
+    // we used .map(Number) to return the split string into an array.
+    
+  return toArr;
+}
