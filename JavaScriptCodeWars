@@ -448,3 +448,49 @@ function findNextSquare(sq) {
   return -1;
   }
 }
+
+
+
+
+
+  // Opposites Attract
+
+function lovefunc(flower1, flower2){
+  // moment of truth
+  
+  if ((flower1 % 2 == 0 && flower2 % 2 !== 0) ||
+     ((flower1 % 2 !== 0 && flower2 % 2 == 0))) {
+    return true;
+    } else {
+      return false;
+    }
+}
+
+
+
+
+
+  // Grasshopper - Check for factor
+
+
+function checkForFactor (base, factor) {
+  // code here
+  if (base % factor == 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+
+
+
+
+  // Convert a string to an array
+
+
+function stringToArray(string){
+  // code code code
+  let array = string.split(" ")
+  return array;
+}
