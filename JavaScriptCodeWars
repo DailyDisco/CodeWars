@@ -413,3 +413,38 @@ function digitize(n) {
     
   return toArr;
 }
+
+
+
+
+//return the summation of a number and all numbers leading up to it.
+
+var summation = function (num) {
+ 
+  // this code allows us to add every number up to a certain number together.
+
+  let count = 0;
+  for (let i = 0; i <= num; i++) {
+    count += i;
+  }
+  return count;
+}
+
+
+
+
+
+// create a function that returns perfect squares
+
+function findNextSquare(sq) {
+  // Return the next square if sq is a perfect square, -1 otherwise
+  if (Math.sqrt(sq) % 1 === 0) {
+    // here we are getting the square root of the numner and seeing if it has a remainder,
+      // when divided by 1.
+      // if it does this means that the number is a perfect square.
+    return (Math.sqrt(sq) + 1) ** 2
+      // here we are getting the square root then adding one to it and squaring it again.
+  } else {
+  return -1;
+  }
+}
