@@ -535,3 +535,37 @@ function bmi(weight, height) {
     return "Obese";
   }
 }
+
+
+
+
+
+  // Abbreviate a Two Word Name
+
+
+function abbrevName(name){
+
+    // code away
+
+  let nameArr = name.split(" ")
+    // here we are creating an array with the two names
+
+  return nameArr[0][0] + "." + nameArr[1][0].toUpperCase();
+    // here we access the first strings first character value and then the second items first charactor value
+
+}
+
+
+
+
+
+  // Find the smallest integer in the array
+
+
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min(...args)
+      // here we are using ... to spread the args array 
+        // we then have the Math.min method run to return the smallest number.
+  }
+}
