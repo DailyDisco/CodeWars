@@ -569,3 +569,19 @@ class SmallestIntegerFinder {
         // we then have the Math.min method run to return the smallest number.
   }
 }
+
+
+
+
+  
+  // Find Maximum and Minimum Values of a List
+
+var min = function(list){
+    list.sort();
+    return Math.min(...list);
+}
+
+var max = function(list){
+    list.sort()
+    return Math.max(...list);
+}
