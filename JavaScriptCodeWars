@@ -585,3 +585,13 @@ var max = function(list){
     list.sort()
     return Math.max(...list);
 }
+
+
+
+
+
+  // Disemvowel Trolls
+
+function disemvowel(str) {
+  return str.replace(/[aeiou]/gi, "")
+}
