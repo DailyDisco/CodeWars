@@ -595,3 +595,18 @@ var max = function(list){
 function disemvowel(str) {
   return str.replace(/[aeiou]/gi, "")
 }
+ //Convert a Boolean to a String
+
+
+
+
+
+
+function booleanToString(b){
+  //your code here
+  if (b) {
+    return b = "true";
+  } else {
+    return b = "false"
+  }
+}
