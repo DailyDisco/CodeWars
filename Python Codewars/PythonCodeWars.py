@@ -95,3 +95,9 @@ def close_compare(a, b, margin=0):
         return -1
     elif b < a:
         return 1
+    
+# Remove the time 8 Kyu Python
+def shorten_to_date(long_date):
+    #your code here
+    # split at the , and grab the array value of everything before that
+    return long_date.split(',')[0]
