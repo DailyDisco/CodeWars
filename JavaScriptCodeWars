@@ -610,3 +610,56 @@ function booleanToString(b){
     return b = "false"
   }
 }
+
+
+
+
+
+ //Sum of the first nth term of Series
+
+
+function SeriesSum(n)
+{
+  // Happy Coding ^_^
+  let result = 0;
+  
+  let average = 1;
+  
+  for (let i = 0; i < n; i++) {
+    if (i == 0) {
+      result = 1;
+    } else {
+      average += 3;
+      result = result + (1 / average);
+    }
+  }
+  return result.toFixed(2);
+}
+
+
+
+
+
+  // Keep Hydrated!
+
+
+function litres(time) {
+  let litres = time * .5;
+  return Math.floor(litres);
+}
+
+
+
+
+
+  // Will you make it?
+
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  // TODO
+  if (distanceToPump <= (mpg * fuelLeft)) {
+    return true;
+  } else {
+    return false;
+  }
+};
