@@ -672,3 +672,12 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 function minMax(arr){
   return [Math.min(...arr), Math.max(...arr)]; // fix me!
 }
+
+
+
+
+  // Remove String Spaces
+
+function noSpace(x){
+  return x.split(" ").join("");
+}
