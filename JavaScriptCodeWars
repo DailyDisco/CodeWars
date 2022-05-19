@@ -681,3 +681,15 @@ function minMax(arr){
 function noSpace(x){
   return x.split(" ").join("");
 }
+
+
+
+
+  // All Star Code Challenge #18
+  
+function strCount(str, letter){  
+  //code here
+  return str.split(letter).length-1;
+  
+  //why do we need the minus 1 here?
+}
