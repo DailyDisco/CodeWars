@@ -551,3 +551,11 @@ function getEvenNumbers(numbersArray) {
   // return the even numbers by filtering and using the modulo operator and if the remainder is 0 it is even
   return numbersArray.filter((words) => words % 2 === 0);
 }
+
+// Welcome to the City (8 Kyu)
+
+function sayHello(name, city, state) {
+  name = name.toString().replace(/,/gi, ' ');
+  city = city.concat(',');
+  return 'Hello, ' + name + '! Welcome to ' + city + ' ' + state + '!';
+}
