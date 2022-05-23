@@ -559,3 +559,9 @@ function sayHello(name, city, state) {
   city = city.concat(',');
   return 'Hello, ' + name + '! Welcome to ' + city + ' ' + state + '!';
 }
+
+// Ones and Zeros (7 Kyu)
+const binaryArrayToNumber = (arr) => {
+  // your code
+  return parseInt(arr.join(''), 2);
+};
