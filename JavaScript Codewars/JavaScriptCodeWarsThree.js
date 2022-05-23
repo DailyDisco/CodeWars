@@ -543,3 +543,11 @@ function minValue(values) {
   // use the + sign to convert the string to the number
   return +[...new Set(values)].sort().join('');
 }
+
+// JavaScript Array Filter (7 Kyu)
+
+function getEvenNumbers(numbersArray) {
+  // filter out the odd numbers
+  // return the even numbers by filtering and using the modulo operator and if the remainder is 0 it is even
+  return numbersArray.filter((words) => words % 2 === 0);
+}
