@@ -511,3 +511,9 @@ function hexToDec(hexString) {
   //your code here
   return parseInt(hexString, 16);
 }
+
+// Beginner - Lost Without a Map level 8 Kyu
+
+function maps(x) {
+  return x.map((x) => x * 2);
+}
