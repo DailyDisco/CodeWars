@@ -734,3 +734,19 @@ function getAge(inputString){
 // return the girl's correct age as an integer. Happy coding :) 
   return parseInt(inputString.slice("0, 1"))
 }
+
+
+
+
+
+  //Sum of positive
+  
+function positiveSum(arr) {
+  
+  const reducer = (accumulator, current) => accumulator + (current > 0 ? current : 0)
+    //reducer gets two parameters, accumlator and current
+    // accumulator is the total
+    // the current is only added if it is greater than 0
+  
+  return arr.reduce(reducer, 0)
+}
