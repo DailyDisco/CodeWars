@@ -750,3 +750,19 @@ function positiveSum(arr) {
   
   return arr.reduce(reducer, 0)
 }
+
+
+
+
+
+  // Can we divide it?
+
+function isDivideBy(number, a, b) {
+  // good luck
+  if ((number % a == 0) && (number % b == 0)) {
+    return true;
+  } else {
+    return false;
+  }
+    
+}
