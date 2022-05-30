@@ -811,3 +811,54 @@ function makeUpperCase(str) {
   let newStr = str.toUpperCase();
   return newStr;
 }
+
+
+
+
+  // Student's Final Grade
+  
+function finalGrade (exam, projects) {
+  
+  if (exam > 90 || projects > 10) {
+    return 100;
+  } else if (exam > 75 && projects >= 5) {
+    return 90;
+  } else if (exam > 50 && projects >= 2) {
+    return 75;
+  } else {
+    return 0;
+  }
+
+
+
+
+
+  // Total amount of points
+  
+function points(games) {
+  
+    let homePoints = 0;
+  
+      games.forEach(function(game){
+          // here we use the forEach to run a function on each array item
+        
+        let x = game.split(':')[0]
+        
+        let y = game.split(':')[1]
+          // we then set the value of the arrays equal to x and y respectively
+        
+        
+          // we must then create an if else function that checks the values and assigns the proper points.
+        if(x === y){
+          homePoints ++;
+          
+        } else if(x > y){
+          homePoints +=3;
+          
+        } else{
+          homePoints += 0;
+        }
+      })
+      return homePoints
+    }
+}
