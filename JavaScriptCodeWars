@@ -799,3 +799,15 @@ class Kata {
   
   }
 }
+
+
+
+
+  // MakeUpperCase
+
+
+function makeUpperCase(str) {
+  // Code here
+  let newStr = str.toUpperCase();
+  return newStr;
+}
