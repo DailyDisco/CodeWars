@@ -873,3 +873,18 @@ function cockroachSpeed(s) {
   //Good Luck!
   return Math.floor(s / .036)
 }
+
+
+
+
+
+function correct(string)
+{
+	// your code here
+  
+  // to do this we will return one line of 3 string.replace methods with each one 
+    // set to the corresponding rules.
+
+  return string.replace(/5/g,'S').replace(/0/g,'O').replace(/1/g,'I');
+
+}
