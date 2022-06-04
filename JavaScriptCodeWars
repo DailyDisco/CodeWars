@@ -908,3 +908,14 @@ function updateLight(current) {
   }
 
 }
+
+
+
+
+
+	//Invert values
+	
+function invert(array) {
+    // here we use the .map array method so that we can multiply each item in the array by -1 which gives us the inverted value.
+ return array.map(num => num * -1)
+}
