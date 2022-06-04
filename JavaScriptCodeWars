@@ -888,3 +888,23 @@ function correct(string)
   return string.replace(/5/g,'S').replace(/0/g,'O').replace(/1/g,'I');
 
 }
+
+
+
+
+
+	//Thinkful - Logic Drills: Traffic light
+	
+function updateLight(current) {
+  
+  //your code here!
+  
+  if (current == "green") {
+    return "yellow";
+  } else if (current == "yellow") {
+    return "red";
+  } else if (current =="red") {
+    return "green";
+  }
+
+}
