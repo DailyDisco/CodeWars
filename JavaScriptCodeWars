@@ -919,3 +919,19 @@ function invert(array) {
     // here we use the .map array method so that we can multiply each item in the array by -1 which gives us the inverted value.
  return array.map(num => num * -1)
 }
+
+
+
+
+
+
+	// Keep up the hoop
+
+function hoopCount (n) {
+   //your code goes here    
+  if (n >= 10) {
+    return "Great, now move on to tricks";
+  } else {
+    return "Keep at it until you get it"
+  }
+}
