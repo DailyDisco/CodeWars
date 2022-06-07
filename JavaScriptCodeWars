@@ -935,3 +935,12 @@ function hoopCount (n) {
     return "Keep at it until you get it"
   }
 }
+
+
+
+
+// Write the "square"-function here
+
+function square (number) {
+  return Math.pow(number, 2)
+}
