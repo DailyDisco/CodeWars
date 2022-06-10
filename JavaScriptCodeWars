@@ -962,3 +962,14 @@ function isTriangle(a,b,c)
 {
    return (a + b > c) && (b + c > a) && (c + a >b);
 }
+
+
+
+
+
+
+	// debug sayHello function
+	
+function sayHello(name) {
+  return 'Hello, ' + name
+}
