@@ -973,3 +973,17 @@ function isTriangle(a,b,c)
 function sayHello(name) {
   return 'Hello, ' + name
 }
+
+
+
+
+
+
+	//create your first javascript function!
+	
+//refer to the example and write your first JS function
+function helloWorld () {
+  var str = "Hello World!";
+  
+  console.log(str);
+}
