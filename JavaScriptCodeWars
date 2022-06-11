@@ -987,3 +987,22 @@ function helloWorld () {
   
   console.log(str);
 }
+
+
+
+
+
+	// Sum of two lowest positive integers
+	
+function sumTwoSmallestNumbers(numbers) {  
+  //Code here
+  
+  let first = Math.min(...numbers)
+  
+  numbers.splice(numbers.indexOf(first), 1)
+  
+  let second = Math.min(...numbers)
+  
+  return first + second;
+  
+}
