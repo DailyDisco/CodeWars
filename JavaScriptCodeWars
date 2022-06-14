@@ -1021,3 +1021,18 @@ function powersOfTwo(n){
   }
   return myArray
 }
+
+
+
+
+	// Find the stray number
+	
+function stray(numbers) {
+  let sorted = numbers.sort();
+  if (sorted[0] !== sorted[1]) {
+    return sorted[0];
+  } else {
+    return sorted[sorted.length - 1]
+  }
+  return 0;
+}
