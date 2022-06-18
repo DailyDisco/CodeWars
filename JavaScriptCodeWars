@@ -1064,3 +1064,12 @@ function removeEveryOther(arr){
   }
   return newArr;
 }
+
+
+
+
+
+	// alarm on and off
+function setAlarm(employed, vacation){
+  return employed && !vacation;
+}
