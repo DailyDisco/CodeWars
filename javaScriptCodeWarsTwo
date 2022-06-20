@@ -2,6 +2,13 @@
 
 function opposite(number) {
   //your code here
-  
   return 0 - number
+}
+
+
+
+// Third Angle of a Triangle
+
+function otherAngle(a, b) {
+  return 180 - (a + b);
 }
