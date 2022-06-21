@@ -12,3 +12,17 @@ function opposite(number) {
 function otherAngle(a, b) {
   return 180 - (a + b);
 }
+
+
+
+// Anagram Detection
+
+// write the function isAnagram
+var isAnagram = function(test, original) {
+  
+  let anagram = test.toLowerCase().split("").sort().join("");
+  
+  let originalAna = original.toLowerCase().split("").sort().join("");
+  
+  return (anagram == originalAna) ? true : false;
+};
