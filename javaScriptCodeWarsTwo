@@ -36,3 +36,18 @@ var championsLeagueGoals = 10
 var copaDelReyGoals = 5
 
 var totalGoals = (laLigaGoals + championsLeagueGoals + copaDelReyGoals)
+
+
+
+// is it a palindrome?
+      
+function isPalindrome(x) {
+  // your code here
+  let regexSpaces = /[\W_]/gi;
+  
+  let lowerCase = x.toLowerCase().replace(regexSpaces, '');
+  
+  let stringReversed = lowerCase.split('').reverse().join(''); 
+  
+  return stringReversed === lowerCase;
+}
