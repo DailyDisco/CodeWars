@@ -51,3 +51,13 @@ function isPalindrome(x) {
   
   return stringReversed === lowerCase;
 }
+
+
+
+// Century From Year
+
+function century(year) {
+  // Finish this :)
+  
+  return Math.floor((year - 1) / 100 + 1)
+}
