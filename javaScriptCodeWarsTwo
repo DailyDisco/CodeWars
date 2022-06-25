@@ -61,3 +61,16 @@ function century(year) {
   
   return Math.floor((year - 1) / 100 + 1)
 }
+
+
+
+// Name Shuffler
+
+function nameShuffler(str){
+  //Shuffle It
+  
+  return str.split(" ").reverse().join(" ");
+  
+  // 1st try
+  
+}
