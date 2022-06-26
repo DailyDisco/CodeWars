@@ -74,3 +74,11 @@ function nameShuffler(str){
   // 1st try
   
 }
+
+
+// Returning Strings
+
+function greet(name){
+  return "Hello, " + name + " how are you doing today?";
+  //your code here
+}
