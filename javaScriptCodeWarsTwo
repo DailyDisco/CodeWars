@@ -82,3 +82,21 @@ function greet(name){
   return "Hello, " + name + " how are you doing today?";
   //your code here
 }
+
+
+
+// Find the capitals
+
+var capitals = function (word) {
+  
+  let empty = []
+  
+  for (let i = 0; i < word.length; i++){
+    // this next piece of code will check if a capital letter is equal to that same letter in the original array
+    if (word[i].toUpperCase() == word[i]) {
+      empty.push(i)
+        // if the letter matches then we push it to the new empty array
+    }
+  }
+  return empty;
+};
