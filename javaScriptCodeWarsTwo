@@ -100,3 +100,24 @@ var capitals = function (word) {
   }
   return empty;
 };
+
+
+
+// Testing 1-2-3
+
+var number=function(array){
+  //your awesome code here
+  
+  let finalArr = [];
+  
+  for (let i = 0, j = 1; i < array.length; i += 1) {
+    // here we set two variables i for the location in the array, and j for the number of the line we are on
+    if (array.length === 0) {
+      return 'Empty array should return empty string';
+    } else {
+      finalArr.push(`${j}: ${array[i]}`);
+      j += 1;
+    }
+  }
+  return finalArr;
+}
