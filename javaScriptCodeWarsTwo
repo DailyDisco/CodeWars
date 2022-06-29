@@ -121,3 +121,28 @@ var number=function(array){
   }
   return finalArr;
 }
+
+
+
+//  Grasshopper - Terminal game move function Level 8
+
+function move (position, roll) {
+  // return the new position
+  
+  return position + (roll * 2);
+}
+
+
+
+//  List Filtering Level 7
+function filter_list(l) {
+  // Return a new array with the strings filtered out
+  let filteredArr = [];
+  
+  for (let i = 0; i < l.length; i++) {
+    if (typeof l[i] != 'string') {
+      filteredArr.push(l[i]);
+    }
+  }
+  return filteredArr;
+}
