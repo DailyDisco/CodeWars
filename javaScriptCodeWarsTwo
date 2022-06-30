@@ -135,6 +135,7 @@ function move (position, roll) {
 
 
 //  List Filtering Level 7
+
 function filter_list(l) {
   // Return a new array with the strings filtered out
   let filteredArr = [];
@@ -145,4 +146,15 @@ function filter_list(l) {
     }
   }
   return filteredArr;
+}
+
+
+
+// Count by X Level 8
+
+function countBy(x, n) {
+  let z = [];
+  for (let i = 1; i <= n; i++)
+    z.push(x * i);
+  return z;
 }
