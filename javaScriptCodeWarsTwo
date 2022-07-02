@@ -162,6 +162,7 @@ function countBy(x, n) {
 
 
 // if you can't sleep count sheep level 8
+
 var countSheep = function (num){
   //your code here
   
@@ -171,4 +172,12 @@ var countSheep = function (num){
   return str
   
   return 
+}
+
+
+ // Plural Level 8
+  
+function plural(n) {
+  // ...
+  return (n!==1)
 }
