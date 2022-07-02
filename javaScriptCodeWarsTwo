@@ -158,3 +158,17 @@ function countBy(x, n) {
     z.push(x * i);
   return z;
 }
+
+
+
+// if you can't sleep count sheep level 8
+var countSheep = function (num){
+  //your code here
+  
+  let str = ""
+  
+  for(let i = 1; i <= num; i++) { str+= `${i} sheep...`; }
+  return str
+  
+  return 
+}
