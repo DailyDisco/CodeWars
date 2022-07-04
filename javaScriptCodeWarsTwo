@@ -181,3 +181,17 @@ function plural(n) {
   // ...
   return (n!==1)
 }
+
+
+
+// Switch it Up! Level 8
+
+function switchItUp(number){
+  
+//Write your own Code!
+  //let's create an index so that we may access it using the argument being passed in the input
+  let words = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine'];
+  //this will return the given value in the give arguments index
+  return words[number];
+  
+}
