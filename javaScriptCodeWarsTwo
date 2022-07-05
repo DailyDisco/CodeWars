@@ -227,3 +227,13 @@ function greet(language) {
 return languages[0][language] === undefined ? 'Welcome' : languages[0][language]
 	
 }
+
+
+
+// Sum The Strings
+
+function sumStr(a,b) {
+
+  return Number(a) + Number(b) + ""
+  // by adding a string to this, the whole return becomes a string type
+}
