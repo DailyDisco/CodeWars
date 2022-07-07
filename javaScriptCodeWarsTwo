@@ -237,3 +237,13 @@ function sumStr(a,b) {
   return Number(a) + Number(b) + ""
   // by adding a string to this, the whole return becomes a string type
 }
+
+
+
+// Round up to the next multiple of 5 ( 7 Kyu )
+
+function roundToNext5(n){
+  // ...
+  return Math.ceil(n / 5) * 5
+  
+}
