@@ -247,3 +247,11 @@ function roundToNext5(n){
   return Math.ceil(n / 5) * 5
   
 }
+
+
+
+// Beginner Series #1 School Paperwork ( 8 Kyu )
+
+function paperwork(n, m) {
+  return n < 0 || m < 0 ? 0 : n * m;
+}
