@@ -255,3 +255,17 @@ function roundToNext5(n){
 function paperwork(n, m) {
   return n < 0 || m < 0 ? 0 : n * m;
 }
+
+
+
+// Remove the minimum ( 7 Kyu )
+
+function removeSmallest(numbers) {
+  // use slice to move everything into a new array so that we don't alter the original array
+  let result = numbers.slice(0)
+  
+  // start splicing at the index witht the lowest number in the numbers array
+  result.splice(numbers.indexOf(Math.min(...numbers)), 1)
+  // return the new lowest value in a array
+  return result
+}
