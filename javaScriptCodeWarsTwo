@@ -278,3 +278,13 @@ function findNeedle(haystack) {
     return "found the needle at position " + haystack.indexOf("needle");
   // your code here
 }
+
+
+
+// Grasshopper - Terminal game combat function (8 kyu)
+
+function combat(health, damage) {
+  // Write your code here
+  return health > damage ? health - damage : 0;
+  
+}
