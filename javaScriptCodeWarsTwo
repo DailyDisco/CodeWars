@@ -288,3 +288,15 @@ function combat(health, damage) {
   return health > damage ? health - damage : 0;
   
 }
+
+
+
+// Lario and Muigi Pipe Problem (8 Kyu)
+
+function pipeFix(numbers){
+  let arr = [];
+	for (let i = numbers[0]; i <= numbers[numbers.length - 1]; i++) {
+		arr.push(i);
+	}
+	return arr;
+}
