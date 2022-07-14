@@ -316,3 +316,19 @@ function repeatStr (n, s) {
 function sumMix(x){
     return x.reduce((x, y) => Number(x) + Number(y), 0);
 }
+
+
+
+//  Drink about
+
+function peopleWithAgeDrink(old) {
+  if (old <= 13) {
+    return "drink toddy";
+  } else if (old <= 17) {
+    return "drink coke";
+  } else if (old < 21) {
+    return "drink beer";
+  } else {
+    return "drink whisky"
+  }
+};
