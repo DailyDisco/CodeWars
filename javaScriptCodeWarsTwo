@@ -308,3 +308,11 @@ function pipeFix(numbers){
 function repeatStr (n, s) {
   return s.repeat(n);
 }
+
+
+
+// Sum Mixed Array (8 kyu)
+
+function sumMix(x){
+    return x.reduce((x, y) => Number(x) + Number(y), 0);
+}
