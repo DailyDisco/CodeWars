@@ -344,3 +344,12 @@ function doubleChar(str) {
   };
   return word;
 };
+
+
+
+// Return Negative (8 kyu)
+
+function makeNegative(num) {
+  // Code?
+  return num > 0 ? - + num : num;
+}	
