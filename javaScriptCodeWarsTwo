@@ -353,3 +353,19 @@ function makeNegative(num) {
   // Code?
   return num > 0 ? - + num : num;
 }	
+
+
+
+// Extract the domain name from a URL (5 kyu)
+
+function domainName(url){
+  // let us replace everything but the domain name of a URL then return the url with only the domain name.
+  url = url.replace("https://", '');
+  url = url.replace("http://", '');
+  url = url.replace("www.", '');
+  
+  
+  // splits everything after the domain name ex: .com .com/carbonfive/raygun etc..
+  return url.split('.')[0];
+  //your code here
+}
