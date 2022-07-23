@@ -369,3 +369,12 @@ function domainName(url){
   return url.split('.')[0];
   //your code here
 }
+
+
+
+// 
+function descendingOrder(n){
+
+  return parseInt(String(n).split('').sort().reverse().join(''))
+  //...
+}
