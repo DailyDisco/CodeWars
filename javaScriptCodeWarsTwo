@@ -388,3 +388,19 @@ function friend(friends){
   // create a new function using the filter method to filter out anything that is not equal to four characters
   return friends.filter(el => el.length == 4)
 }
+
+
+
+// Number of People in the Bus
+
+var number = function(busStops){
+  let ontoCount = 0;
+  let offCount = 0;
+  // Good Luck!
+  
+  for (let i = 0; i < busStops.length; i++) {
+    ontoCount += busStops[i][0];
+    offCount += busStops[i][1];
+  }
+  return ontoCount - offCount
+}
