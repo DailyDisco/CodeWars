@@ -378,3 +378,13 @@ function descendingOrder(n){
   return parseInt(String(n).split('').sort().reverse().join(''))
   //...
 }
+
+
+
+// Friend or Foe?
+
+function friend(friends){
+  //your code here
+  // create a new function using the filter method to filter out anything that is not equal to four characters
+  return friends.filter(el => el.length == 4)
+}
