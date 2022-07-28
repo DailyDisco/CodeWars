@@ -404,3 +404,17 @@ var number = function(busStops){
   }
   return ontoCount - offCount
 }
+
+
+
+// Factorial (7 kyu)
+
+function factorial(n)
+{
+  // Calculate the factorial here
+  if (n === 0) {
+    return 1
+  }
+    return n * factorial(n-1)
+  
+}
