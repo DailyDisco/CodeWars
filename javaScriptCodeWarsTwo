@@ -391,7 +391,7 @@ function friend(friends){
 
 
 
-// Number of People in the Bus
+// Number of People in the Bus (7 kyu)
 
 var number = function(busStops){
   let ontoCount = 0;
