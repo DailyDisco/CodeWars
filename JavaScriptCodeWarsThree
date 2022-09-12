@@ -4,3 +4,12 @@ function addFive(num) {
   let total = num + 5
   return total
 }
+
+
+// Exclamation marks series #1: Remove an exclamation mark from the end of string (Level 8 Kyu)
+
+function remove (string) {
+  //coding and coding....
+  // return a string.sliced at the end if it ends with !, and s if it doesn't end with !
+  return string[string.length-1] == '!' ? string.slice(0, string.length-1) : string;
+}
