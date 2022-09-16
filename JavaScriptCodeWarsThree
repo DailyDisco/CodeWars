@@ -13,3 +13,11 @@ function remove (string) {
   // return a string.sliced at the end if it ends with !, and s if it doesn't end with !
   return string[string.length-1] == '!' ? string.slice(0, string.length-1) : string;
 }
+
+
+// The Wide-Mouthed Frog! (Level 8 Kyu)
+
+function mouthSize(animal) {
+  // code here
+  return animal.toUpperCase() == "ALLIGATOR" ? "small" : "wide"
+}
