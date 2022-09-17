@@ -21,3 +21,15 @@ function mouthSize(animal) {
   // code here
   return animal.toUpperCase() == "ALLIGATOR" ? "small" : "wide"
 }
+
+
+// You only need one - Beginner
+
+function check(a, x) {
+  // your code here
+  if (a.includes(x)) {
+    return true;
+  } else {
+    return false;
+  }
+}
