@@ -33,3 +33,9 @@ function check(a, x) {
     return false;
   }
 }
+
+
+// Reverse Strings (Level 8 Kyu)
+function solution(str){
+  return str.split('').reverse().join('');  
+}
