@@ -39,3 +39,23 @@ function check(a, x) {
 function solution(str){
   return str.split('').reverse().join('');  
 }
+
+
+// Find the odd int (Level 6 Kyu)
+
+function findOdd(A) {
+  //happy coding!
+  
+  // first loop through the array
+    for (let i = 0; i < A.length; i++) {
+      
+      next filter the array value
+    const count = A.filter(value => value === A[i]).length;
+      
+      // if it's odd
+    if (count % 2 == 1) {
+      // return that array number
+        return A[i];
+    }
+}
+}
