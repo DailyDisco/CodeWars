@@ -59,3 +59,15 @@ function findOdd(A) {
     }
 }
 }
+
+
+// Filter out the geese (Level 8 Kyu)
+
+function gooseFilter (birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+
+  // We use the filter method to get a subset of the original array (birds) based on specific criteria. The filter method tests each element of the array, so in our case here, we want to pull out ONLY the items that are not included in the geese array.
+  
+  return birds.filter(item => !geese.includes(item));
+  // return an array containing all of the strings in the input array except those that match strings in geese
+};
