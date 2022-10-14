@@ -71,3 +71,9 @@ function gooseFilter (birds) {
   return birds.filter(item => !geese.includes(item));
   // return an array containing all of the strings in the input array except those that match strings in geese
 };
+
+// Beginner - Reduce but Grow (Level 8 Kyu)
+
+function grow(x){
+  return x.reduce((acc, c) => acc*c)               
+}
