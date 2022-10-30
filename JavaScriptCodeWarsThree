@@ -77,3 +77,20 @@ function gooseFilter (birds) {
 function grow(x){
   return x.reduce((acc, c) => acc*c)               
 }
+
+// You're the square! (Level 7 Kyu)
+var isSquare = function(n){
+  return false; // fix me
+}
+
+
+// String transformer (Level 6 Kyu)
+
+function stringTransformer(str) {
+  // Your code here
+  let mapped = str.split(' ').map(x => x.replace(/./gi, x=> {
+    if (x === x.toLowerCase()) return x.toUpperCase()
+    if (x === x.toUpperCase()) return x.toLowerCase()
+  })).reverse().join(' ')
+  return mapped;
+}
