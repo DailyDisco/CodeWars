@@ -121,3 +121,10 @@ function popElement(arr){
   arr.pop()
   return arr
 }
+
+
+// Bin to Decimal (Level 8 Kyu)
+function binToDec(bin){
+  // ...
+  return parseInt(bin, 2)
+}
