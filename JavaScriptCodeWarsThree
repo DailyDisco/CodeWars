@@ -206,3 +206,33 @@ function arithmetic(a, b, operator) {
     return a / b;
   }
 }
+
+// Write Number in Expanded Form (6 kyu)
+
+function expandedForm(num) {
+  // Your code here
+
+  // receiving a number
+  // ex: 42 = 40 + 2
+
+  // num.split() into an array
+  // num = 42; num.split(); num = [4, 2];
+  // let numLength = num.length - 1; num.length = 2;
+  // we are only adding 1, zero, to the '4' in our array
+
+  let arr = [];
+
+  num = num.toString().split('');
+
+  for (let i = 0; i < num.length; i++) {
+    // for (let j = num.length)
+    if (num[i] !== '0') {
+      arr.push(+num[i] * 10 ** (num.length - (i + 1)));
+    }
+  }
+
+  // console.log(numLength);
+  // console.log(numSplit);
+  // console.log(newArr);
+  return arr.join(' + ');
+}
