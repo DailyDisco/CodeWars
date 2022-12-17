@@ -251,3 +251,16 @@ function differenceOfSquares(n) {
   }
   return sum - squares;
 }
+
+// Determine offspring sex based on genes XX and XY chromosomes (8 Kyu)
+function chromosomeCheck(sperm) {
+  // solution 1
+  //   if (sperm === 'XY') return "Congratulations! You're going to have a son."
+  //   return "Congratulations! You're going to have a daughter."
+  // }
+
+  // solution 2
+  return sperm === 'XY'
+    ? "Congratulations! You're going to have a son."
+    : "Congratulations! You're going to have a daughter.";
+}
