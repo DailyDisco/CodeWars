@@ -236,3 +236,18 @@ function expandedForm(num) {
   // console.log(newArr);
   return arr.join(' + ');
 }
+
+// Difference Of Squares (7 Kyu)
+
+function differenceOfSquares(n) {
+  // ...
+  // use gauss' trick equation
+  let sum = ((n * (n + 1)) / 2) ** 2;
+  console.log(sum);
+  let squares = 0;
+
+  for (let i = 1; i <= n; i++) {
+    squares += i ** 2;
+  }
+  return sum - squares;
+}
