@@ -177,3 +177,10 @@ function equal5() {
     b = v4; //set number value to b
   return a % b;
 }
+
+// DNA to RNA Conversion (8 kyu)
+
+function DNAtoRNA(dna) {
+  // use regex to replace 'T' globally with 'U'
+  return dna.replace(/T/g, 'U');
+}
