@@ -184,3 +184,10 @@ function DNAtoRNA(dna) {
   // use regex to replace 'T' globally with 'U'
   return dna.replace(/T/g, 'U');
 }
+
+// get Character from ASCII Value
+
+function getChar(c) {
+  // ...
+  return String.fromCharCode(c);
+}
