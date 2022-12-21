@@ -1,0 +1,208 @@
+// Grasshopper - Basic Function Fixer (Level 8 Kyu)
+
+function addFive(num) {
+  let total = num + 5;
+  return total;
+}
+
+// Exclamation marks series #1: Remove an exclamation mark from the end of string (Level 8 Kyu)
+
+function remove(string) {
+  //coding and coding....
+  // return a string.sliced at the end if it ends with !, and s if it doesn't end with !
+  return string[string.length - 1] == '!'
+    ? string.slice(0, string.length - 1)
+    : string;
+}
+
+// The Wide-Mouthed Frog! (Level 8 Kyu)
+
+function mouthSize(animal) {
+  // code here
+  return animal.toUpperCase() == 'ALLIGATOR' ? 'small' : 'wide';
+}
+
+// You only need one - Beginner
+
+function check(a, x) {
+  // your code here
+  if (a.includes(x)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// Reverse Strings (Level 8 Kyu)
+function solution(str) {
+  return str.split('').reverse().join('');
+}
+
+// Find the odd int (Level 6 Kyu)
+
+function findOdd(A) {
+  //happy coding!
+
+  // first loop through the array
+  for (let i = 0; i < A.length; i++) {
+    //next filter the array value
+    const count = A.filter((value) => value === A[i]).length;
+
+    // if it's odd
+    if (count % 2 == 1) {
+      // return that array number
+      return A[i];
+    }
+  }
+}
+
+// Filter out the geese (Level 8 Kyu)
+
+function gooseFilter(birds) {
+  var geese = ['African', 'Roman Tufted', 'Toulouse', 'Pilgrim', 'Steinbacher'];
+
+  // We use the filter method to get a subset of the original array (birds) based on specific criteria. The filter method tests each element of the array, so in our case here, we want to pull out ONLY the items that are not included in the geese array.
+
+  return birds.filter((item) => !geese.includes(item));
+  // return an array containing all of the strings in the input array except those that match strings in geese
+}
+
+// Beginner - Reduce but Grow (Level 8 Kyu)
+
+function grow(x) {
+  return x.reduce((acc, c) => acc * c);
+}
+
+// You're the square! (Level 7 Kyu)
+var isSquare = function (n) {
+  return false; // fix me
+};
+
+// String transformer (Level 6 Kyu)
+
+function stringTransformer(str) {
+  // Your code here
+  let mapped = str
+    .split(' ')
+    .map((x) =>
+      x.replace(/./gi, (x) => {
+        if (x === x.toLowerCase()) return x.toUpperCase();
+        if (x === x.toUpperCase()) return x.toLowerCase();
+      })
+    )
+    .reverse()
+    .join(' ');
+  return mapped;
+}
+
+// Training JS #4: Basic data types--Array (Level 8 Kyu)
+function getLength(arr) {
+  //return length of arr
+  return arr.length;
+}
+function getFirst(arr) {
+  //return the first element of arr
+  return arr[0];
+}
+function getLast(arr) {
+  //return the last element of arr
+  return arr[arr.length - 1];
+}
+function pushElement(arr) {
+  var el = 1;
+  //push el to arr
+  arr.push(el);
+
+  return arr;
+}
+function popElement(arr) {
+  //pop an element from arr
+
+  arr.pop();
+  return arr;
+}
+
+// Bin to Decimal (Level 8 Kyu)
+function binToDec(bin) {
+  // ...
+  return parseInt(bin, 2);
+}
+
+// twoSum (Level 6 Kyu)
+function twoSum(numbers, target) {
+  let index = [];
+
+  for (let i = 0; i < numbers.length; i++)
+    for (let j = i + 1; j < numbers.length; j++)
+      if (numbers[i] + numbers[j] === target) {
+        return [i, j];
+      }
+}
+
+// Training JS #2: Basic data types--Number (8 kyu)
+let v1 = 50,
+  v2 = 100,
+  v3 = 150,
+  v4 = 200,
+  v5 = 2,
+  v6 = 250;
+
+function equal1() {
+  let a = v1,
+    b = v1;
+  return a + b;
+}
+
+//Please refer to the example above to complete the following functions
+function equal2() {
+  let a = v3, //set number value to a
+    b = v1; //set number value to b
+  return a - b;
+}
+
+function equal3() {
+  let a = v1, //set number value to a
+    b = v5; //set number value to b
+  return a * b;
+}
+
+function equal4() {
+  let a = v4, //set number value to a
+    b = v5; //set number value to b
+  return a / b;
+}
+
+function equal5() {
+  let a = v2, //set number value to a
+    b = v4; //set number value to b
+  return a % b;
+}
+
+// DNA to RNA Conversion (8 kyu)
+
+function DNAtoRNA(dna) {
+  // use regex to replace 'T' globally with 'U'
+  return dna.replace(/T/g, 'U');
+}
+
+// get Character from ASCII Value
+
+function getChar(c) {
+  // ...
+  return String.fromCharCode(c);
+}
+
+// Make a function that does arithmetic! (7 Kyu)
+
+function arithmetic(a, b, operator) {
+  //your code here!
+  if (operator == 'add') {
+    return a + b;
+  } else if (operator == 'subtract') {
+    return a - b;
+  } else if (operator == 'multiply') {
+    return a * b;
+  } else if (operator == 'divide') {
+    return a / b;
+  }
+}
