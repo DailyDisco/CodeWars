@@ -206,3 +206,33 @@ function arithmetic(a, b, operator) {
     return a / b;
   }
 }
+
+//
+
+function isUnique(arr) {
+  // return true if the number is in there more than once
+
+  // return false if every number is unique
+
+  // get array loop through and check if that index matches any other index, if so, return true
+
+  // if the number is !== itself, check the rest of the array
+
+  // start looping through the array
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+    // start looping through the next array
+    for (let j = i + 1; j < arr.length; j++) {
+      console.log(arr[j]);
+      // start of if statement that checks equality of each index
+      if (arr[i] == arr[j]) {
+        console.log(arr[i]);
+        console.log(arr[j]);
+        // if the indexes match return true
+        return true;
+      }
+    }
+    // if the indexes don't match return false
+    return false;
+  }
+}
