@@ -260,3 +260,16 @@ function whatday(num) {
       return 'Wrong, please enter a number between 1 and 7';
   }
 }
+
+// What is between? (8 Kyu)
+function between(a, b) {
+  // your code here
+  let arr = [];
+  // set the starting value of i == a since it's the lower bound
+  // make the counter go all the way up to b's value
+  for (let i = a; i < b + 1; i++) {
+    // push i into the new array
+    arr.push(i);
+  }
+  return arr;
+}
