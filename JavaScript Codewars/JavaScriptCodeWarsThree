@@ -236,3 +236,27 @@ function firstNonConsecutive(arr) {
   // if they are all consecutive return null
   return null;
 }
+
+// Return the day (8 Kyu)
+function whatday(num) {
+  // create a switch case function that returns the name of the day for a given num
+  // if it's not a number (NaN) return "Wrong, please enter a number between 1 and 7"
+  switch (num) {
+    case 1:
+      return 'Sunday';
+    case 2:
+      return 'Monday';
+    case 3:
+      return 'Tuesday';
+    case 4:
+      return 'Wednesday';
+    case 5:
+      return 'Thursday';
+    case 6:
+      return 'Friday';
+    case 7:
+      return 'Saturday';
+    default:
+      return 'Wrong, please enter a number between 1 and 7';
+  }
+}
