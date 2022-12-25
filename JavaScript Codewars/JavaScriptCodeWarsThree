@@ -222,3 +222,17 @@ String.prototype.toAlternatingCase = function () {
     )
     .join('');
 };
+
+// Find the first non-consecutive number (8 Kyu)
+function firstNonConsecutive(arr) {
+  // loop through the array
+  for (let i = 0; i < arr.length - 1; i++) {
+    // if the array doesn't match the previous array
+    if (arr[i + 1] != arr[i] + 1) {
+      // return the breaking array value
+      return arr[i + 1];
+    }
+  }
+  // if they are all consecutive return null
+  return null;
+}
