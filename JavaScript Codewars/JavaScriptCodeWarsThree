@@ -335,3 +335,20 @@ function solution(nums) {
   // else return an empty array []
   return nums !== null ? nums.sort((a, b) => a - b) : [];
 }
+
+// A wolf in sheep's clothing (8 Kyu) Kinda hard
+
+function warnTheSheep(queue) {
+  // check if the end of the queue's array is 'wolf'
+  if (queue[queue.length - 1] === 'wolf') {
+    // if 'wolf' return the next line
+    return 'Pls go away and stop eating my sheep';
+  } else {
+    // return the index value of the wolf so you can put it in the string return
+    let index = queue.findIndex((x) => x == 'wolf');
+    // return a template string that returns a value = to the length of the queue - the index of the wolf - 1 since 0 index
+    return `Oi! Sheep number ${
+      queue.length - index - 1
+    }! You are about to be eaten by a wolf!`;
+  }
+}
