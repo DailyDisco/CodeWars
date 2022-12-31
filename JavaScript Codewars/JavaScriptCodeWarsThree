@@ -327,3 +327,11 @@ function getCount(str) {
   // return the counter
   return counter;
 }
+
+// Sort Numbers = (7 Kyu)
+
+function solution(nums) {
+  // if the array is not null, return the nums array sorted
+  // else return an empty array []
+  return nums !== null ? nums.sort((a, b) => a - b) : [];
+}
