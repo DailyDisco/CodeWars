@@ -311,3 +311,19 @@ function findAverage(array) {
   }
   return array.length > 0 ? total / array.length : 0;
 }
+
+// Vowel Count (7 Kyu)
+function getCount(str) {
+  // create an array of the letters that count
+  let vowels = ['a', 'e', 'i', 'o', 'u'];
+  // create a counter to keep track of the vowel amount
+  let counter = 0;
+
+  // loop through the string using a variable of i
+  for (let i of str) {
+    // create an if statement that checks if the string letter is inside the array of vowels
+    if (vowels.includes(i)) counter++;
+  }
+  // return the counter
+  return counter;
+}
