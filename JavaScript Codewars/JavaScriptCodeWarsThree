@@ -309,5 +309,5 @@ function findAverage(array) {
   for (let i = 0; i < array.length; i++) {
     total += array[i];
   }
-  return total / array.length;
+  return array.length > 0 ? total / array.length : 0;
 }
