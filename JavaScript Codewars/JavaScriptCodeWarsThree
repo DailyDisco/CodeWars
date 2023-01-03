@@ -299,3 +299,15 @@ function arrayDiff(a, b) {
   // Filter through the array and only return the val of a if b does not include the value of a
   return a.filter((val) => !b.includes(val));
 }
+
+// Calculate Average (8 Kyu)
+
+function findAverage(array) {
+  // your code here
+  let total = 0;
+
+  for (let i = 0; i < array.length; i++) {
+    total += array[i];
+  }
+  return total / array.length;
+}
