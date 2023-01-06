@@ -387,3 +387,15 @@ function take(arr, n) {
   let split = arr.splice(n);
   return arr;
 }
+
+// Count characters in your string // 6 Kyu
+
+function count(string) {
+  // split the string and reduce the contents of that string with the total being the obj and the value being the character
+  return string.split('').reduce(function (obj, s) {
+    // that characters value is = to 0 and gains one if it's there
+    obj[s] = (obj[s] || 0) + 1;
+    // return the finished obj
+    return obj;
+  }, {});
+}
