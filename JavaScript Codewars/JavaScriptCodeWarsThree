@@ -415,3 +415,10 @@ function preFizz(n) {
   }
   return output;
 }
+
+// 5 without numbers !!
+
+function unusualFive() {
+  let five = 'abcde';
+  return five.length;
+}
