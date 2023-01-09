@@ -399,3 +399,19 @@ function count(string) {
     return obj;
   }, {});
 }
+
+// Pre-FizzBuzz Workout #1
+
+function preFizz(n) {
+  // create a new variable that is a new array to hold the numbers
+  let output = new Array();
+  // start the at the number one because the array always has a 1
+  let num = 1;
+  while (output.length < n) {
+    // push the number to the array
+    output.push(num);
+    // add one to push the next number on the next loop
+    num += 1;
+  }
+  return output;
+}
