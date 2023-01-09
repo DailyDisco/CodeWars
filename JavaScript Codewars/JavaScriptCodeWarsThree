@@ -422,3 +422,28 @@ function unusualFive() {
   let five = 'abcde';
   return five.length;
 }
+
+// Check the exam 7 Kyu
+
+function checkExam(array1, array2) {
+  // good luck
+  let count = 0;
+  for (let i = 0; i < array1.length; i++) {
+    if (array1[i] == array2[i]) {
+      // if it's right add four
+      count = count + 4;
+    } else if (array2[i] == '') {
+      // check the student's answers for blanks
+      count = count - 0;
+    } else {
+      // if it's wrong subtract a point
+      count = count - 1;
+    }
+  }
+
+  if (count < 0) {
+    return 0;
+  }
+
+  return count;
+}
