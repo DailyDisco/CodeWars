@@ -447,3 +447,12 @@ function checkExam(array1, array2) {
 
   return count;
 }
+
+// Sort Array by String Length (7 Kyu)
+
+function sortByLength(array) {
+  // Return an array containing the same strings, ordered from shortest to longest
+
+  // sort the array from least to greatest using the sort higher order array method
+  return array.sort((a, b) => a.length - b.length);
+}
