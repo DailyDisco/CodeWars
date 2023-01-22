@@ -456,3 +456,8 @@ function sortByLength(array) {
   // sort the array from least to greatest using the sort higher order array method
   return array.sort((a, b) => a.length - b.length);
 }
+
+// Add Length (8 Kyu)
+function addLength(str) {
+  return str.split(' ').map((word) => `${word} ${word.length}`);
+}
