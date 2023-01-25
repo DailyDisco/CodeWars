@@ -461,3 +461,11 @@ function sortByLength(array) {
 function addLength(str) {
   return str.split(' ').map((word) => `${word} ${word.length}`);
 }
+
+// Exclamation marks series #11: Replace all vowel to exclamation mark in the sentence (8 Kyu)
+function replace(s) {
+  //coding and coding....
+  let regex = /[aeiou]/gi;
+
+  return s.replace(regex, '!');
+}
