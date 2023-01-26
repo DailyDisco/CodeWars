@@ -485,3 +485,9 @@ function mergeArrays(arr1, arr2) {
   // using ... new Set you get rid of any duplicates in the combined array
   return [...new Set(newArr.sort((a, b) => a - b))];
 }
+
+function smash(words) {
+  // use regex to replace the commas with spaces
+  // after you convert the array to a string
+  return words.toString().replace(/,/gi, ' ');
+}
