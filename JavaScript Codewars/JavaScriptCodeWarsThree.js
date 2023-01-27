@@ -469,3 +469,11 @@ function replace(s) {
 
   return s.replace(regex, '!');
 }
+
+// surface area and volume of a box (8 Kyu)
+function getSize(width, height, depth) {
+  // define the surface area of a box formula
+  let area = 2 * (height * width) + 2 * (height * depth) + 2 * (width * depth);
+  // define the volume of a box formula
+  return [area, width * height * depth];
+}
