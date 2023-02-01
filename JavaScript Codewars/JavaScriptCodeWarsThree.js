@@ -504,3 +504,10 @@ function printArray(array) {
   //show me the code!
   return [...array].toString();
 }
+
+// Hex to Decimal level 8 Kyu
+
+function hexToDec(hexString) {
+  //your code here
+  return parseInt(hexString, 16);
+}
