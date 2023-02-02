@@ -498,3 +498,9 @@ function include(arr, item) {
   // ...
   return arr.includes(item);
 }
+
+// Printing Array elements with Comma delimiters (8 Kyu)
+function printArray(array) {
+  //show me the code!
+  return [...array].toString();
+}
