@@ -533,3 +533,13 @@ function findDifference(a, b) {
 
   return volumeA > volumeB ? volumeA - volumeB : volumeB - volumeA;
 }
+
+// Form The Minimum (7 Kyu)
+
+function minValue(values) {
+  //your code here
+  // use the new Set() to create a new array object
+  // then sort the array and join the numbers in the array
+  // use the + sign to convert the string to the number
+  return +[...new Set(values)].sort().join('');
+}
