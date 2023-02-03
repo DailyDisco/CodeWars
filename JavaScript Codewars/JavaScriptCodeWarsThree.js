@@ -491,3 +491,10 @@ function smash(words) {
   // after you convert the array to a string
   return words.toString().replace(/,/gi, ' ');
 }
+
+// Enumerable Magic - Does My List Include This?
+
+function include(arr, item) {
+  // ...
+  return arr.includes(item);
+}
