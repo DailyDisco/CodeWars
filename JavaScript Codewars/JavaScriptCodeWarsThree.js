@@ -523,3 +523,13 @@ function maps(x) {
 function toBinary(n) {
   return parseInt(n.toString(2));
 }
+
+// Difference of Volumes of Cuboids (8 Kyu)
+
+function findDifference(a, b) {
+  //loading...
+  let volumeA = a[0] * a[1] * a[2];
+  let volumeB = b[0] * b[1] * b[2];
+
+  return volumeA > volumeB ? volumeA - volumeB : volumeB - volumeA;
+}
