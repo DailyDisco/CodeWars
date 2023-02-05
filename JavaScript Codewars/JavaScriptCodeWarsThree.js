@@ -517,3 +517,9 @@ function hexToDec(hexString) {
 function maps(x) {
   return x.map((x) => x * 2);
 }
+
+// Convert to Binary Level 8 Kyu
+
+function toBinary(n) {
+  return parseInt(n.toString(2));
+}
