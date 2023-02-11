@@ -565,3 +565,9 @@ const binaryArrayToNumber = (arr) => {
   // your code
   return parseInt(arr.join(''), 2);
 };
+
+// Reverse List Order
+
+function reverseList(list) {
+  return list.reverse();
+}
