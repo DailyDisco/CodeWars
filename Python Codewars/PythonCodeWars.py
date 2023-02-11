@@ -8,3 +8,11 @@ class Ball(object):
         # the ball type will be "regular" if there is no parameter
         # if there is a parameter it will be the parameter value "super"
         self.ball_type = ball_type
+        
+        
+        
+# Sum Arrays
+
+def sum_array(a):
+#     return the sum of the array by casting sum on the a
+    return(sum(a))
