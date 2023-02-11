@@ -449,7 +449,7 @@ function alphabetPosition(text) {
 
   // loop through the array
   for (let i = 0; i < text.length; i++) {
-    // set letter that you are picking (when capitilized) to the charCodeAt() method
+    // set letter that you are picking (when capitalized) to the charCodeAt() method
     let letter = text.toUpperCase().charCodeAt(i);
     // if that character is outside of the alphabet subtract 64 from the character codes so that you return a number
     // make sure that you set a string at the end to space out the results
