@@ -571,3 +571,15 @@ const binaryArrayToNumber = (arr) => {
 function reverseList(list) {
   return list.reverse();
 }
+
+// Fix your code before the garden dies! (8 Kyu)
+
+function rainAmount(mm) {
+  // check if the rainwater is enough
+  if (mm >= 40) {
+    return 'Your plant has had more than enough water for today!';
+  } else if (mm < 40) {
+    // template string to use a variable in the string
+    return `You need to give your plant ${40 - mm}mm of water`;
+  }
+}
