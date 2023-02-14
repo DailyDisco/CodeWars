@@ -32,7 +32,7 @@ function reverseWords(str) {
   return str.split('').reverse().join('').split(' ').reverse().join(' ');
   // this returns the string first split at each character (including spaces), then each
   // character is reversed, following by the characters being joined together.
-  // then we repeat those steps but we start by seperating at each word then reversing the
+  // then we repeat those steps but we start by separating at each word then reversing the
   // words.
 }
 
@@ -186,7 +186,7 @@ function countSheeps(arrayOfSheep) {
   return num;
 }
 
-//does the string have the same amount of x's and o's irrelavent to capitalization
+//does the string have the same amount of x's and o's irrelevant to capitalization
 
 function XO(str) {
   //code here
