@@ -583,3 +583,19 @@ function rainAmount(mm) {
     return `You need to give your plant ${40 - mm}mm of water`;
   }
 }
+
+// Formatting decimal places #0
+
+function twoDecimalPlaces(n) {
+  // Your code here
+  // make n a number by casting Number()
+  //   then round to 2 decimal places using toFixed()
+  return Number(n.toFixed(2));
+}
+
+// Reversing Words in a String 8 kyu
+
+function reverse(string) {
+  //your code here
+  return string.split(' ').reverse().join(' ');
+}
