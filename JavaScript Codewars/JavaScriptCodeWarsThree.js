@@ -599,3 +599,15 @@ function reverse(string) {
   //your code here
   return string.split(' ').reverse().join(' ');
 }
+
+// Sort and Star 8 Kyu
+
+function twoSort(s) {
+  let sortedArray = s.sort();
+  //   console.log() to see what we are doing
+  //   console.log(sortedArray);
+  //   console.log(sortedArray[0]);
+  //   console.log(sortedArray[0].split(''))
+  //   console.log(sortedArray[0].split('').join('***'))
+  return sortedArray[0].split('').join('***');
+}
