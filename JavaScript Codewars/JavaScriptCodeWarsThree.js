@@ -624,3 +624,16 @@ function problem(x) {
 function usdcny(usd) {
   return `${usd * 6.75} Chinese Yuan`;
 }
+
+// No oddities here 7 Kyu
+
+function noOdds(values) {
+  // Return all non-odd values
+  let evenArray = [];
+  for (number of values) {
+    if (number % 2 == 0) {
+      evenArray.push(number);
+    }
+  }
+  return evenArray;
+}
