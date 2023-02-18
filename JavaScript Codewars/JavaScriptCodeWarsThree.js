@@ -618,3 +618,9 @@ function problem(x) {
   //your code here
   return typeof x == 'number' ? x * 50 + 6 : 'Error';
 }
+
+// (USD) => CNY; 8 Kyu
+
+function usdcny(usd) {
+  return `${usd * 6.75} Chinese Yuan`;
+}
