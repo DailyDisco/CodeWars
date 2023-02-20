@@ -611,3 +611,10 @@ function twoSort(s) {
   //   console.log(sortedArray[0].split('').join('***'))
   return sortedArray[0].split('').join('***');
 }
+
+// Super Duper Easy 8 kyu
+
+function problem(x) {
+  //your code here
+  return typeof x == 'number' ? x * 50 + 6 : 'Error';
+}
