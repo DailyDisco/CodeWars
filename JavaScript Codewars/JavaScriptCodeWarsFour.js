@@ -20,3 +20,12 @@ function multipleOfIndex(array) {
   }
   return holdArray;
 }
+
+// Simple validation of a username with regex 8 kyu
+
+function validateUsr(username) {
+  //   check for a-z 0-9 and _ in brackets
+  // in the curley braces, make sure its 4 to 16 characters
+  res = /^[a-z0-9_]{4,16}$/.test(username);
+  return res;
+}
