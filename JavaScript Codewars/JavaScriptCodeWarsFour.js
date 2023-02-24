@@ -25,7 +25,17 @@ function multipleOfIndex(array) {
 
 function validateUsr(username) {
   //   check for a-z 0-9 and _ in brackets
-  // in the curley braces, make sure its 4 to 16 characters
+  // in the curly braces, make sure its 4 to 16 characters
   res = /^[a-z0-9_]{4,16}$/.test(username);
   return res;
 }
+
+// Reversed sequence 8 Kyu
+
+const reverseSeq = (n) => {
+  let count = [];
+  for (var i = n; i > 0; i -= 1) {
+    count.push(i);
+  }
+  return count;
+};
