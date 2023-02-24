@@ -80,3 +80,22 @@ function answer3() {
   //the answer should be "yes" or "no"
   return 'yes';
 }
+
+// How old will I be in 2099? 8 Kyu
+
+function calculateAge(age1, age2) {
+  // enter your code here.
+  if (age2 > age1) {
+    if (age2 - age1 == 1) {
+      return 'You are 1 year old.';
+    }
+    return 'You are ' + (age2 - age1) + ' years old.';
+  } else if (age1 > age2) {
+    if (age1 - age2 == 1) {
+      return 'You will be born in 1 year.';
+    }
+    return 'You will be born in ' + (age1 - age2) + ' years.';
+  } else {
+    return 'You were born this very year!';
+  }
+}
