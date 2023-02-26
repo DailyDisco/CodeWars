@@ -131,3 +131,27 @@ function subt(a, b) {
 function distinct(a) {
   return [...new Set(a)];
 }
+
+// Fix string case 7 kyu
+
+function solve(s) {
+  //..
+  let lowerCase = 0;
+  let upperCase = 0;
+
+  for (letter of s) {
+    if (letter == letter.toLowerCase()) {
+      lowerCase++;
+    } else if (letter == letter.toUpperCase()) {
+      upperCase++;
+    }
+  }
+
+  if (lowerCase == upperCase) {
+    return s.toLowerCase();
+  } else if (lowerCase > upperCase) {
+    return s.toLowerCase();
+  } else if (upperCase > lowerCase) {
+    return s.toUpperCase();
+  }
+}
