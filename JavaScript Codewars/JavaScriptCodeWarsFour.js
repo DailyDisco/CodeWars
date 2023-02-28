@@ -125,3 +125,9 @@ function exponent(a, b) {
 function subt(a, b) {
   return a - b;
 }
+
+// Remove duplicates from list 8 Kyu
+
+function distinct(a) {
+  return [...new Set(a)];
+}
