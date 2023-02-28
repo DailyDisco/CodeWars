@@ -99,3 +99,29 @@ function calculateAge(age1, age2) {
     return 'You were born this very year!';
   }
 }
+
+// Fundamentals: Return 8 Kyu
+
+function add(a, b) {
+  return a + b;
+}
+
+function divide(a, b) {
+  return a / b;
+}
+
+function multiply(a, b) {
+  return a * b;
+}
+
+function mod(a, b) {
+  return a % b;
+}
+
+function exponent(a, b) {
+  return a ** b;
+}
+
+function subt(a, b) {
+  return a - b;
+}
