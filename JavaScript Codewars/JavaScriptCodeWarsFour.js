@@ -155,3 +155,16 @@ function solve(s) {
     return s.toUpperCase();
   }
 }
+
+// Count the divisors of a number 7 Kyu
+
+function getDivisorsCnt(n) {
+  let count = 0;
+  // todo
+  for (let i = 1; i <= n; i++) {
+    if (n % i == 0) {
+      count++;
+    }
+  }
+  return count;
+}
