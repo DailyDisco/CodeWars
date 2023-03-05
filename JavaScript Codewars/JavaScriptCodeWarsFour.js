@@ -192,3 +192,16 @@ function array(arr) {
   // split at the commas, slice the first and last letter then join it with a space between each character
   return arr.split(',').slice(1, -1).join(' ') || null;
 }
+
+// Bumps in the Road 7 Kyu
+
+function bump(x) {
+  let count = 0;
+
+  for (letter of x) {
+    if (letter == 'n') {
+      count++;
+    }
+  }
+  return count > 15 ? 'Car Dead' : 'Woohoo!';
+}
