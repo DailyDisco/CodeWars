@@ -185,3 +185,10 @@ var greet = function (name) {
   console.log(restOfWord);
   return `Hello ${firstLetter + restOfWord}!`;
 };
+
+// Remove First and Last Character Part Two (8 Kyu)
+
+function array(arr) {
+  // split at the commas, slice the first and last letter then join it with a space between each character
+  return arr.split(',').slice(1, -1).join(' ') || null;
+}
