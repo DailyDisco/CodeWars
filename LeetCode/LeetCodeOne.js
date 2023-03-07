@@ -68,3 +68,18 @@ var isIsomorphic = function (s, t) {
   // reread this
   return new Set([...sEmpty.values()]).size == sEmpty.size;
 };
+
+// The old switcheroo
+
+function vowel2index(str) {
+  //code me
+  return str
+    .split('')
+    .map((e, i) => {
+      if (e.match(/[AEIOU]/gi)) {
+        e = i + 1;
+      }
+      return e;
+    })
+    .join('');
+}
