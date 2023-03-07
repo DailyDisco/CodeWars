@@ -30,3 +30,41 @@ var pivotIndex = function (nums) {
   }
   return -1;
 };
+
+// 205. Isomorphic Strings (easy level)
+
+/**
+ * @param {string} s
+ * @param {string} t
+ * @return {boolean}
+ */
+var isIsomorphic = function (s, t) {
+  // two string parameters
+  // return true or false
+  // egg = add ? true
+
+  // check if the string is equal length to each other
+  // if so check if it is isomorphic
+  // if so return true;
+  // if not return false
+
+  let sEmpty = new Map();
+  console.log(sEmpty);
+
+  if (s.length !== t.length) {
+    return false;
+  }
+
+  for (let i = 0; i < s.length; i++) {
+    if (!sEmpty.has(s[i])) {
+      sEmpty.set(s[i], t[i]);
+    } else {
+      if (sEmpty.get(s[i]) !== t[i]) {
+        console.log(sEmpty);
+        return false;
+      }
+    }
+  }
+  // reread this
+  return new Set([...sEmpty.values()]).size == sEmpty.size;
+};
