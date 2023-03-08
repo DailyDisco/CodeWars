@@ -83,3 +83,26 @@ function vowel2index(str) {
     })
     .join('');
 }
+
+// 392. Is Subsequence
+
+/**
+ * @param {string} s
+ * @param {string} t
+ * @return {boolean}
+ */
+var isSubsequence = function (s, t) {
+  if (s.length > t.length) return false;
+
+  const tLength = t.length;
+  const sLength = s.length;
+
+  let count = 0;
+
+  for (let i = 0; i < tLength; i++) {
+    if (s[count] == t[i]) {
+      count++;
+    }
+  }
+  return count == sLength;
+};
