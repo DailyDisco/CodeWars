@@ -144,3 +144,29 @@ function isIsogram(str) {
   }
   return true;
 }
+
+// Char Code Calculation (7 Kyu)
+
+function calc(x) {
+  // create a new str variable
+  // split the variable to map it
+  // in the map each variable is the charcode at that value
+  let str = x
+    .split('')
+    .map((e) => (e = e.charCodeAt(0)))
+    .join('')
+    .split('');
+
+  // create a copy of the other string and replace all 7s with 1s
+  let copy = str.map((e) => {
+    if (e === '7') {
+      e = '1';
+    }
+    return e;
+  });
+
+  console.log(str);
+
+  // add up all the numbers in the ints and subtract
+  return str.reduce((a, c) => a + +c, 0) - copy.reduce((a, c) => a + +c, 0);
+}
