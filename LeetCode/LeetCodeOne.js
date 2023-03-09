@@ -106,3 +106,16 @@ var isSubsequence = function (s, t) {
   }
   return count == sLength;
 };
+
+// Grasshopper - Create the rooms (8 Kyu)
+
+// Add rooms here
+// create a hash table called rooms
+// give the rooms hash table properties of:
+// firstRoom, secondRoom, thirdRoom
+// give the properties values
+var rooms = {
+  firstRoom: { name: 'Red', description: 'Hello', completed: false },
+  secondRoom: { name: 'Red', description: 'Hello', completed: false },
+  thirdRoom: { name: 'Red', description: 'Hello', completed: false },
+};
