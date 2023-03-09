@@ -119,3 +119,28 @@ var rooms = {
   secondRoom: { name: 'Red', description: 'Hello', completed: false },
   thirdRoom: { name: 'Red', description: 'Hello', completed: false },
 };
+
+// Isograms
+
+function isIsogram(str) {
+  //...
+  // set the string to lowercase for matching cases
+  str = str.toLowerCase();
+
+  // start counter variables
+  var i;
+  var j;
+
+  // start a loop for i
+  for (i = 0; i < str.length; ++i) {
+    // start a loop for j that is always one more than i
+    // first update the number then use the value
+    for (j = i + 1; j < str.length; ++j) {
+      // if the values are equal then it is not an Isogram
+      if (str[i] === str[j]) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
