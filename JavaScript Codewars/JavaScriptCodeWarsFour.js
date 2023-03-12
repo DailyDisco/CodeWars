@@ -282,3 +282,8 @@ function _if(bool, func1, func2) {
 function usdcny(usd) {
   return `${(usd * 6.75).toFixed(2)} Chinese Yuan`;
 }
+
+function factorial(n) {
+  //your code here
+  return n > 1 ? n * factorial(n - 1) : 1;
+}
