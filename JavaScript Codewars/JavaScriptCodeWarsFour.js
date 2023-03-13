@@ -307,3 +307,28 @@ function grader(score) {
     return 'F';
   }
 }
+
+// Exclamation marks series #6: Remove n exclamation marks in the sentence from left to right (8 Kyu)
+
+function remove(s, n) {
+  //coding and coding....
+
+  // p - we are taking in a string s and int n
+  // r - we are return s with n '!' removed
+  // e - s = "Hi!"; n = 1; returns "Hi"
+  // p - let's declare what we want to replace
+  // then run a loop to replace '!' n amount of times with ''
+  // return the new s
+
+  //   let regex = /!/gi (doesn't work?)
+
+  while (n) {
+    s = s.replace('!', '');
+    console.log(s);
+    n--;
+    console.log(n);
+  }
+
+  console.log(s, 'final s');
+  return s;
+}
