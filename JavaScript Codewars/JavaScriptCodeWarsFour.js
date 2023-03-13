@@ -287,3 +287,23 @@ function factorial(n) {
   //your code here
   return n > 1 ? n * factorial(n - 1) : 1;
 }
+
+// Grader 8 Kyu
+
+function grader(score) {
+  // p = we take a number 0 - 1.0
+  // r = "A" || "B" || "C" || "D" || "F"
+  // e = 0.7 = "C"
+  // p = check the number if the number is a certain range return the letter
+  if (score >= 0.6 && score < 0.7) {
+    return 'D';
+  } else if (score >= 0.7 && score < 0.8) {
+    return 'C';
+  } else if (score >= 0.8 && score < 0.9) {
+    return 'B';
+  } else if (score >= 0.9 && score <= 1) {
+    return 'A';
+  } else {
+    return 'F';
+  }
+}
