@@ -332,3 +332,16 @@ function remove(s, n) {
   console.log(s, 'final s');
   return s;
 }
+
+function min(arr, toReturn) {
+  // TODO
+
+  // p = an array of numbers, and a string of either 'value' or 'index'
+  // r = return toReturn == 'value' ? value : index
+  // e = [1, 2, 3, 4, 5] 'value' 1
+  // p =
+
+  let lowest = Math.min(...arr);
+
+  return toReturn == 'value' ? lowest : arr.indexOf(Math.min(...arr));
+}
