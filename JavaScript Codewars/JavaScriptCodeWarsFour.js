@@ -333,6 +333,8 @@ function remove(s, n) {
   return s;
 }
 
+// Smallest value of an array 8 Kyu
+
 function min(arr, toReturn) {
   // TODO
 
