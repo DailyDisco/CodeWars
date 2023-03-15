@@ -347,3 +347,80 @@ function min(arr, toReturn) {
 
   return toReturn == 'value' ? lowest : arr.indexOf(Math.min(...arr));
 }
+
+function grabDoll(dolls) {
+  var bag = [];
+  //coding here
+  for (doll of dolls) {
+    if (doll == 'Hello Kitty' || doll == 'Barbie doll') {
+      bag.push(doll);
+    } else continue;
+    if (bag.length >= 3) break;
+  }
+  return bag;
+}
+
+// Alphabet war (7 Kyu) JavaScript
+
+function alphabetWar(fight) {
+  const leftLetters = {
+    w: 4,
+    p: 3,
+    b: 2,
+    s: 1,
+  };
+
+  const rightLetters = {
+    m: 4,
+    q: 3,
+    d: 2,
+    z: 1,
+  };
+
+  let leftCount = 0;
+  let rightCount = 0;
+
+  // p = parameters = a string of letters
+  // r = returns = Right side wins! or Left side wins!
+  // e = examples = "z" = "Right side wins"
+  // p = pseudocode
+  //
+
+  let fightSplit = fight.split('');
+
+  for (let i = 0; i < fight.length; i++) {
+    if (fight[i] in leftLetters) {
+      leftCount += leftLetters[fight[i]];
+    } else if (fight[i] in rightLetters) {
+      rightCount += rightLetters[fight[i]];
+    }
+  }
+
+  if (leftCount > rightCount) {
+    return 'Left side wins!';
+  } else if (rightCount > leftCount) {
+    return 'Right side wins!';
+  } else {
+    return "Let's fight again!";
+  }
+}
+
+// Split In Parts (7 Kyu)
+
+var splitInParts = function (s, partLength) {
+  // Good Luck!
+
+  // p = a string of letters, and a int
+  // r = return the string split into parts of equal length to the int
+  // e = "HelloKata", 1 = "H e l l o K a t a"
+  // p = create a new arr
+  // run a for loop
+  // push the parLength amount of characters into the string
+
+  let lastArray = [];
+
+  for (let i = 0; i < s.length; i += partLength) {
+    lastArray.push(s.slice(i, i + partLength));
+  }
+  return lastArray.join(' ');
+};
