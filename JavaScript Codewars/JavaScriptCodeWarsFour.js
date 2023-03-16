@@ -424,3 +424,19 @@ var splitInParts = function (s, partLength) {
   }
   return lastArray.join(' ');
 };
+
+// Flatten and sort an array (7 Kyu)
+
+('use strict');
+
+function flattenAndSort(array) {
+  // Good luck, brave code warrior!
+  return array.flat().sort((a, b) => a - b);
+}
+
+// Find out whether the shape is a cube
+var cubeChecker = function (volume, side) {
+  return Math.abs(side) ** 3 == volume && volume !== 0 && side > 0
+    ? true
+    : false;
+};
