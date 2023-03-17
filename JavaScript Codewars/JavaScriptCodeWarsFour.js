@@ -440,3 +440,9 @@ var cubeChecker = function (volume, side) {
     ? true
     : false;
 };
+
+// Training JS #5: Basic data types--Object 8 Kyu
+
+function animal(obj) {
+  return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
+}
