@@ -446,3 +446,29 @@ var cubeChecker = function (volume, side) {
 function animal(obj) {
   return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
 }
+
+// Grasshopper - Function Syntax Debugging 8 Kyu
+function main(verb, main) {
+  //   verb = verb.toString()
+  //   noun = main.toSTring()
+  return verb + main;
+}
+
+// IPv4 to int32 (6 Kyu) JavaScript
+
+function ip4toInt32(n) {
+  //split string by dots
+  //map array, convert each number to 8 digit binary
+  //parse the integer with 2 as the specified radix
+
+  let arr = n
+    .split('.')
+    .map((e) => {
+      e = Number(e);
+      return ('00000000' + e.toString(2)).slice(-8);
+    })
+    .join('');
+  return parseInt(arr, 2);
+
+  // the 2 is the radix, which is a parameter that defines the number system used, in this case binary
+}
