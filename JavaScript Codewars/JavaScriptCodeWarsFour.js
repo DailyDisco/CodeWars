@@ -472,3 +472,19 @@ function ip4toInt32(n) {
 
   // the 2 is the radix, which is a parameter that defines the number system used, in this case binary
 }
+
+// Tidy Number (Special Numbers Series #9) Level 7 Kyu Javascript
+
+function tidyNumber(n) {
+  let splitN = n.toString().split('');
+  console.log(splitN);
+  //your code here
+  let count = 0;
+  for (let i = 0; i < splitN.length; i++) {
+    console.log(splitN[i]);
+    if (+splitN[i] > +splitN[i + 1]) {
+      return false;
+    }
+  }
+  return true;
+}
