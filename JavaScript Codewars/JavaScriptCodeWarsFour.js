@@ -488,3 +488,33 @@ function tidyNumber(n) {
   }
   return true;
 }
+
+// Sum without highest and lowest number 8 Kyu
+
+function sumArray(array) {
+  // p = we are getting an array of numbers
+  // r = we are returning the array summed without the first and last numbers;
+  // e = [3, 5]
+  // p
+
+  //   if (array && array.length > 1) {
+  //     // sort the array so that the numbers are in order
+  //     let sortedArray = array.sort((a, b) => a - b)
+  //     // slice the first and last numbers
+  //     let slicedArray = sortedArray.slice(1, -1)
+  //     // return the slicedArray reduced
+  //     return slicedArray.reduce((a, b) => a + b, 0)
+  //   }
+  //   if (array && array.length > 1) {
+  //     return array.sort((a, b) => a - b).slice(1, -1).reduce((a, b) => a + b, 0)
+  //   }
+  //   return 0;
+
+  // refactored
+  return array && array.length > 1
+    ? array
+        .sort((a, b) => a - b)
+        .slice(1, -1)
+        .reduce((a, b) => a + b, 0)
+    : 0;
+}
