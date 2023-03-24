@@ -518,3 +518,10 @@ function sumArray(array) {
         .reduce((a, b) => a + b, 0)
     : 0;
 }
+
+// Take the Derivative (8 Kyu)
+function derive(coefficient, exponent) {
+  let exponentPost = exponent - 1;
+  let coefficientPost = coefficient * exponent;
+  return coefficientPost.toString() + 'x^' + exponentPost.toString();
+}
