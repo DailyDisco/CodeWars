@@ -525,3 +525,30 @@ function derive(coefficient, exponent) {
   let coefficientPost = coefficient * exponent;
   return coefficientPost.toString() + 'x^' + exponentPost.toString();
 }
+
+// Row Weights (7 Kyu) Javascript
+function rowWeights(array) {
+  //your code here
+  let teamOne = [];
+  let teamTwo = [];
+  for (let i = 0; i < array.length; i++) {
+    if (i % 2 == 0) {
+      teamTwo.push(array[i]);
+    } else {
+      teamOne.push(array[i]);
+    }
+  }
+
+  if (teamOne.length == 0) {
+    teamOne.push(0);
+  } else if (teamTwo.length == 0) {
+    teamTwo.push(0);
+  }
+
+  if (teamOne.length == 0) teamOne.push(0);
+  if (teamTwo.length == 0) teamTwo.push(0);
+
+  let totalOne = teamOne.reduce((a, b) => a + b);
+  let totalTwo = teamTwo.reduce((a, b) => a + b);
+  return [totalTwo, totalOne];
+}
