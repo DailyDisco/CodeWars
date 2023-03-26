@@ -37,3 +37,22 @@ def count_positives_sum_negatives(arr):
     print(negArr)
 
     return [len(posArr), sum(negArr)]
+
+# simple calculator (8 Kyu)
+
+def calculator(x,y,op):
+    if type(x) != int:
+        return "unknown value"
+    if type(y) != int:
+        return "unknown value"
+    if op == "+":
+        return x + y
+    if op == "-":
+        return x - y
+    if op == "*":
+        return x * y
+    if op == "/":
+        return x / y
+    else:
+        return "unknown value"
+    pass
