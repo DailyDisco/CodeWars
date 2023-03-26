@@ -19,4 +19,21 @@ def sum_array(a):
 
 
 
-# Holiday VI - Shark Pontoon
+# Count of positives / sum of negatives 8 Kyu
+
+def count_positives_sum_negatives(arr):
+    if arr == []:
+        return []
+    
+    posArr = []
+    negArr = []
+    for num in arr:
+        if num > 0:
+            posArr.append(num)
+        else:
+            negArr.append(num)
+            
+    print(posArr)
+    print(negArr)
+
+    return [len(posArr), sum(negArr)]
