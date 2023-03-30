@@ -73,3 +73,23 @@ function htmlspecialchars(formData) {
   // join the array at the end to get a string
   return arr.join('');
 }
+
+// Break camelCase (6 Kyu) (JavaScript)
+function solution(string) {
+  // split strings so that you can loop through them
+  let splitString = string.split('');
+  let capitalString = string.toUpperCase().split('');
+  // create a new string to include the split spaces
+  let newString = string.split('');
+
+  // the counter = to the length of splitString and then move backwards to 0
+  for (i = splitString.length - 1; i >= 0; i--) {
+    // if the string is capital
+    if (splitString[i] == capitalString[i]) {
+      // splice the string at that index and add a space
+      newString.splice(i, 0, ' ');
+    }
+  }
+  // return the joined array
+  return newString.join('');
+}
