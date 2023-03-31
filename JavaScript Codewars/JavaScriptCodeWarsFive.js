@@ -37,3 +37,11 @@ function disariumNumber(n) {
 
   return arr == n ? 'Disarium !!' : 'Not !!';
 }
+
+// Return String of First Characters (7 Kyu) (JavaScript)
+function makeString(s) {
+  // ...
+  let splitS = s.split(' ');
+
+  return splitS.map((word) => word.slice(0, 1)).join('');
+}
