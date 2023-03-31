@@ -45,3 +45,31 @@ function makeString(s) {
 
   return splitS.map((word) => word.slice(0, 1)).join('');
 }
+// Safen User Input Part I - htmlspecialchars (8 Kyu) (JavaScript)
+function htmlspecialchars(formData) {
+  // Insert your code here
+  console.log(formData);
+  let arr = [];
+
+  // loop through the form entry
+  for (let i = 0; i < formData.length; i++) {
+    // if the data = < push its specialchars counterpart
+    if (formData[i] == '<') {
+      arr.push('&lt;');
+      // if the data = > push its specialchars counterpart
+    } else if (formData[i] == '>') {
+      arr.push('&gt;');
+      // if the data = " push its specialchars counterpart
+    } else if (formData[i] == '"') {
+      arr.push('&quot;');
+      // if the data = & push its specialchars counterpart
+    } else if (formData[i] == '&') {
+      arr.push('&amp;');
+      // if the data is anything else push the data
+    } else {
+      arr.push(formData[i]);
+    }
+  }
+  // join the array at the end to get a string
+  return arr.join('');
+}
