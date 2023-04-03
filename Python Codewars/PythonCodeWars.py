@@ -71,3 +71,15 @@ def sp_eng(sentence):
         return True
     else:
         return False
+    
+# Define a card suit 8 Kyu Python
+def define_suit(card):
+    # Good luck
+    if ('d' in card.lower()):
+        return 'diamonds'
+    if ('c' in card.lower()):
+        return 'clubs'
+    if ('h' in card.lower()):
+        return 'hearts'
+    if 's' in card.lower():
+        return 'spades'
