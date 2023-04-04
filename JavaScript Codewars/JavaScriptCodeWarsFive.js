@@ -110,3 +110,22 @@ function longest(s1, s2) {
 
   return [...new Set(joinedSeparatedArray)].sort().join('');
 }
+
+// Sum of Triangular Numbers 7 Kyu Javascript
+
+function sumTriangularNumbers(n) {
+  // if you get a negative number return 0
+  if (n < 0) {
+    return 0;
+  }
+
+  // start a counter
+  let total = 0;
+
+  // loop through the n total
+  for (let i = 1; i <= n; i++) {
+    total += (i * (i + 1)) / 2;
+    console.log(total);
+  }
+  return total;
+}
