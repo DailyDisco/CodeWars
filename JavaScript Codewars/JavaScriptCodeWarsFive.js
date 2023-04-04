@@ -93,3 +93,20 @@ function solution(string) {
   // return the joined array
   return newString.join('');
 }
+
+// Two to One 7 Kyu Javascript
+
+function longest(s1, s2) {
+  // separate the string
+  // join the two separated strings
+  // remove any duplicates
+  // sort the string
+  // your code
+  let separatedStringOne = s1.slice('');
+  let separatedStringTwo = s2.slice('');
+
+  let joinedSeparatedArray = separatedStringOne.concat(separatedStringTwo);
+  console.log(joinedSeparatedArray);
+
+  return [...new Set(joinedSeparatedArray)].sort().join('');
+}
