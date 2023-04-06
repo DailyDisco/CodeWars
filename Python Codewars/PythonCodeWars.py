@@ -83,3 +83,15 @@ def define_suit(card):
         return 'hearts'
     if 's' in card.lower():
         return 'spades'
+    
+# Compare within margin 8 Kyu Python
+
+# Give margin an initial value of 0 because it is optional
+def close_compare(a, b, margin=0):
+    # check if a - b (whether negative or postive) is <= margin or a == b
+    if abs(a - b) <= margin or a == b:
+        return 0
+    elif a < b:
+        return -1
+    elif b < a:
+        return 1
