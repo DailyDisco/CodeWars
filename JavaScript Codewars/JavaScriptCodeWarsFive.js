@@ -141,3 +141,11 @@ function getRealFloor(n) {
     return n;
   }
 }
+
+// Is there a vowel in there? 8 Kyu Javascript
+function isVow(a) {
+  // use regex of vowels to test if the fromCharCode value of x in a is a vowel and return the vowel if it is in the new array
+  return a.map((x) =>
+    /[aeiou]/.test(String.fromCharCode(x)) ? String.fromCharCode(x) : x
+  );
+}
