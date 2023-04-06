@@ -133,11 +133,11 @@ function sumTriangularNumbers(n) {
 // What's the real floor? 8 Kyu Javascript
 
 function getRealFloor(n) {
-  if (n < 13 && n >= 0) {
-    return n - 1;
-  } else if (n < 0) {
-    return n;
-  } else if (n > 13) {
+  if (n > 12) {
     return n - 2;
+  } else if (n > 0) {
+    return n - 1;
+  } else {
+    return n;
   }
 }
