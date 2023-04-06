@@ -101,3 +101,8 @@ def shorten_to_date(long_date):
     #your code here
     # split at the , and grab the array value of everything before that
     return long_date.split(',')[0]
+
+# Holiday VIII - Duty Free 8 Kyu Python
+
+def duty_free(price, discount, holiday_cost):
+  return int(holiday_cost / ((price * discount) / 100 ))
