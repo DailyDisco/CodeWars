@@ -9,3 +9,9 @@ ORDER BY age DESC
 -- Type your SQL here
 SELECT custid, custname, custstate
 FROM customers
+
+-- Adults only (SQL for Beginners #1) 8 kyu SQL
+--Your code here
+SELECT name, age
+FROM users
+WHERE age >= 18
