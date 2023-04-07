@@ -126,3 +126,21 @@ def sum_cubes(n):
         finalTotal = finalTotal + pow(whileCount, 3) 
         whileCount = whileCount + 1
     return finalTotal
+
+# Deodorant Evaporator 7 Kyu
+def evaporator(content, evap_per_day, threshold):
+    # make a variable that tracks the day amount
+    days = 0
+    # find the limit of when the deo goes bad
+    # it is threshold (in %) / content (in mL)
+    limit = threshold/100*content
+    # while the conent >= the limit of good deo
+    while content >= limit:
+        # content = the current content - the evaporated amount of deo per day
+        content -= evap_per_day/100*content
+        # add to the day count
+        days += 1
+    # when that ends return the amount of days
+    return days
+
+    
