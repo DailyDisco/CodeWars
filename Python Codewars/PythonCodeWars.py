@@ -115,3 +115,14 @@ def open_or_senior(data):
     # if those value are not satisfied
     # return 'Open' for the values in data
     return ['Senior' if person[0] >= 55 and person[1] > 7 else 'Open' for person in data]
+
+# Sum of Cubes 7 Kyu Python
+def sum_cubes(n):
+    # your code here
+    finalTotal = 0
+    whileCount = 0
+    
+    while whileCount <= n:
+        finalTotal = finalTotal + pow(whileCount, 3) 
+        whileCount = whileCount + 1
+    return finalTotal
