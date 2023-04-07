@@ -183,3 +183,25 @@ function capitalize(s) {
 
   return [evenCap, oddCap];
 }
+
+// Even numbers in an array 7 Kyu Javascript
+function evenNumbers(array, number) {
+  // good luck
+
+  let finalArr = [];
+
+  // reverese the array to access the last even numbers
+  let reversedArray = array.reverse();
+
+  console.log(reversedArray);
+  for (let i = 0; i < array.length; i++) {
+    // check if the array value is even or odd
+    // if the length of the array is equal to the number given stop
+    if ((array[i] % 2 == 0) & (finalArr.length != number)) {
+      // push the value to a new array
+      finalArr.push(array[i]);
+    }
+  }
+  // reverese the final array to return the original order
+  return finalArr.reverse();
+}
