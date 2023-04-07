@@ -106,3 +106,12 @@ def shorten_to_date(long_date):
 
 def duty_free(price, discount, holiday_cost):
   return int(holiday_cost / ((price * discount) / 100 ))
+
+# Categorize New Member 7 Kyu Python
+def open_or_senior(data):
+    # return 'Senior'
+    # if the first value in data which is the age is equal to or greater than 55
+    # and if the second value in data which is the handicap is greater than 7
+    # if those value are not satisfied
+    # return 'Open' for the values in data
+    return ['Senior' if person[0] >= 55 and person[1] > 7 else 'Open' for person in data]
