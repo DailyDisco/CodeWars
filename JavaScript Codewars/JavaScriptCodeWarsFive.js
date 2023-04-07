@@ -190,7 +190,7 @@ function evenNumbers(array, number) {
 
   let finalArr = [];
 
-  // reverese the array to access the last even numbers
+  // reverse the array to access the last even numbers
   let reversedArray = array.reverse();
 
   console.log(reversedArray);
@@ -202,6 +202,6 @@ function evenNumbers(array, number) {
       finalArr.push(array[i]);
     }
   }
-  // reverese the final array to return the original order
+  // reverse the final array to return the original order
   return finalArr.reverse();
 }

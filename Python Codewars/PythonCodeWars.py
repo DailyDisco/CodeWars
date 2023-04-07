@@ -143,4 +143,8 @@ def evaporator(content, evap_per_day, threshold):
     # when that ends return the amount of days
     return days
 
-    
+# Highest and Lowest 7 Kyu Python
+def high_and_low(numbers):
+    # ...
+    numbers = [int(x) for x in numbers.split(' ')]
+    return f'{max(numbers)} {min(numbers)}'
