@@ -165,3 +165,21 @@ function pickIt(arr) {
 
   return [odd, even];
 }
+
+// Alternate capitalization 7 Kyu Javascript
+function capitalize(s) {
+  let evenCap = '';
+  let oddCap = '';
+
+  for (let i = 0; i < s.length; i++) {
+    if (i % 2 == 0) {
+      evenCap += s[i].toUpperCase();
+      oddCap += s[i];
+    } else {
+      oddCap += s[i].toUpperCase();
+      evenCap += s[i];
+    }
+  }
+
+  return [evenCap, oddCap];
+}
