@@ -20,3 +20,8 @@ WHERE age >= 18
 -- cast floor and ceiling to round the decimals up and down and return them as alias
 SELECT floor(number1) AS number1, ceiling(number2) AS number2
 FROM decimals;
+
+-- SQL Basics: Simple SUM 8 Kyu SQL
+-- Create your SELECT statement here
+SELECT SUM(age) as age_sum
+FROM people
