@@ -20,3 +20,8 @@ WHERE age >= 18
 -- cast floor and ceiling to round the decimals up and down and return them as alias
 SELECT floor(number1) AS number1, ceiling(number2) AS number2
 FROM decimals;
+
+-- Collect Tuition (SQL for Beginners #4) 8 Kyu SQL
+-- Your Code Here
+SELECT * FROM students
+WHERE tuition_received = False;
