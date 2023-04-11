@@ -148,3 +148,9 @@ def high_and_low(numbers):
     # ...
     numbers = [int(x) for x in numbers.split(' ')]
     return f'{max(numbers)} {min(numbers)}'
+
+# Find Multiples of a Number 8 Kyu Python
+def find_multiples(integer, limit):
+    # Your code here!
+    # return a list that goes through the range in intervals of int
+    return list(range(integer, limit+1, integer))
