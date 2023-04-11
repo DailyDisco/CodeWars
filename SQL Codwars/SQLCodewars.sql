@@ -21,6 +21,11 @@ WHERE age >= 18
 SELECT floor(number1) AS number1, ceiling(number2) AS number2
 FROM decimals;
 
+-- SQL Basics: Simple SUM 8 Kyu SQL
+-- Create your SELECT statement here
+SELECT SUM(age) as age_sum
+FROM people
+
 -- Collect Tuition (SQL for Beginners #4) 8 Kyu SQL
 -- Your Code Here
 SELECT * FROM students
