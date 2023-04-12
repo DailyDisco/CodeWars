@@ -30,3 +30,8 @@ FROM people
 -- Your Code Here
 SELECT * FROM students
 WHERE tuition_received = False;
+
+-- Easy SQL - Ordering 8 Kyu SQL
+/*  SQL  */
+SELECT * FROM companies
+ORDER BY employees DESC
