@@ -205,3 +205,10 @@ function evenNumbers(array, number) {
   // reverse the final array to return the original order
   return finalArr.reverse();
 }
+
+// Training JS #6: Basic data types--Boolean and conditional statements if..else 8 Kyu Javascript
+
+function trueOrFalse(val) {
+  if (val) return true;
+  return false;
+}
