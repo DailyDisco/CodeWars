@@ -35,3 +35,12 @@ WHERE tuition_received = False;
 /*  SQL  */
 SELECT * FROM companies
 ORDER BY employees DESC
+
+-- Easy SQL: Counting and Grouping 7 Kyu SQL
+/*  SQL  */
+-- select race and all counts from the table demographics
+SELECT race, count(*) AS count FROM demographics
+-- group by race 
+GROUP BY race
+-- order by count desc
+ORDER BY count DESC
