@@ -212,3 +212,19 @@ function trueOrFalse(val) {
   if (val) return true;
   return false;
 }
+
+// No zeros for heros 8 Kyu Javascript
+function noBoringZeros(n) {
+  // your code
+  // get rid of all 0s at the end of a number ex 1000, vs 1010
+  let splitN = n.toString();
+  let regex = /0+$/gi;
+
+  return +splitN.replace(regex, '');
+}
+
+// Are arrow functions odd? 8 Kyu Javascript
+function odds(values) {
+  // arrow it
+  return values.filter((x) => x % 2 == 1);
+}
