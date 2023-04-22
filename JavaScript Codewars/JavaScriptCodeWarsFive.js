@@ -222,3 +222,10 @@ function noBoringZeros(n) {
 
   return +splitN.replace(regex, '');
 }
+
+// Are arrow functions odd? 8 Kyu Javascript
+
+function odds(values) {
+  // arrow it
+  return values.filter((x) => x % 2 == 1);
+}
