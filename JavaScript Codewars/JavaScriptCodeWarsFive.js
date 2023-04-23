@@ -229,3 +229,24 @@ function odds(values) {
   // arrow it
   return values.filter((x) => x % 2 == 1);
 }
+
+// Switcheroo 7 Kyu Javascript
+
+function switcheroo(x) {
+  console.log(x);
+  console.log(x.split(''));
+
+  let splitX = x.split('');
+  let newArr = [];
+
+  for (letter of splitX) {
+    if (letter == 'a') {
+      newArr.push('b');
+    } else if (letter == 'b') {
+      newArr.push('a');
+    } else {
+      newArr.push(letter);
+    }
+  }
+  return newArr.join('');
+}
