@@ -134,7 +134,7 @@ def evaporator(content, evap_per_day, threshold):
     # find the limit of when the deo goes bad
     # it is threshold (in %) / content (in mL)
     limit = threshold/100*content
-    # while the conent >= the limit of good deo
+    # while the content >= the limit of good deo
     while content >= limit:
         # content = the current content - the evaporated amount of deo per day
         content -= evap_per_day/100*content
@@ -154,3 +154,7 @@ def find_multiples(integer, limit):
     # Your code here!
     # return a list that goes through the range in intervals of int
     return list(range(integer, limit+1, integer))
+
+# Kata Example Twist 8 Kyu
+
+websites = ["codewars"] * 1000
