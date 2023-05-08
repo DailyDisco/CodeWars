@@ -163,3 +163,12 @@ websites = ["codewars"] * 1000
 def angle(n):
     #your code here
     return (n - 2) * 180
+
+# Sleigh Authentication 8 Kyu Python
+class Sleigh(object):
+    def authenticate(self, name, password):
+        if name == "Santa Claus" and password == "Ho Ho Ho!":
+            return True
+        return False
+        
+        
