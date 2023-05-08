@@ -158,3 +158,8 @@ def find_multiples(integer, limit):
 # Kata Example Twist 8 Kyu
 
 websites = ["codewars"] * 1000
+
+# Sum of angles 7 Kyu
+def angle(n):
+    #your code here
+    return (n - 2) * 180
