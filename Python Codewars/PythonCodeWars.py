@@ -171,4 +171,8 @@ class Sleigh(object):
             return True
         return False
         
-        
+# Template Strings 8 Kyu Python      
+def temple_strings(obj, feature): 
+    # your code here
+    return("%s are %s" % (obj, feature))
+ 
