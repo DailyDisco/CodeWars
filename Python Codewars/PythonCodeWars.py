@@ -171,4 +171,8 @@ class Sleigh(object):
             return True
         return False
         
-        
+# Is the string uppercase? 8 Kyu Python
+def is_uppercase(inp):
+    if inp.upper() == inp:
+        return True
+    return False
