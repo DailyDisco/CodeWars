@@ -180,4 +180,18 @@ def is_uppercase(inp):
 def temple_strings(obj, feature): 
     # your code here
     return("%s are %s" % (obj, feature))
- 
+
+
+# Regex validate PIN code 7 Kyu Python
+def validate_pin(pin):
+  validNums = "0123456789";
+  validNumsList = list(validNums);
+  pin = list(pin);
+  valid = True;
+  if (len(pin) is not 4) and (len(pin) is not 6):
+    valid = False;
+  else:
+    for digit in pin:
+      if digit not in validNumsList:
+        valid = False;
+  return valid;       
