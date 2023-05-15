@@ -195,3 +195,12 @@ def validate_pin(pin):
       if digit not in validNumsList:
         valid = False;
   return valid;       
+
+# Regex count lowercase letters 8 Kyu Python
+
+def lowercase_count(strong):
+    i = 0
+    for c in strong:
+        if c.islower():
+            i += 1
+    return i
