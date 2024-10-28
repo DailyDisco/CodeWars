@@ -268,7 +268,18 @@ function uefaEuro2016(teams, scores) {
   // your code...
 }
 
-// Function 1 - hello world
+// Function 1 - hello world - 8 Kyu Javascript
 function greet() {
   return 'hello world!';
+}
+
+// Convert boolean values to strings 'Yes' or 'No' - 8 Kyu Javascript
+function boolToWord(bool) {
+  // P boolean value
+  // R Returns a string "Yes" or "No"
+  // E
+  // P If the bool is true return "Yes" else return "No"
+  //...
+
+  return bool === true ? 'Yes' : 'No';
 }
