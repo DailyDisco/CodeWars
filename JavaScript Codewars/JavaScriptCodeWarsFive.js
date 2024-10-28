@@ -283,3 +283,35 @@ function boolToWord(bool) {
 
   return bool === true ? 'Yes' : 'No';
 }
+
+// The Feast of Many Beasts - 8 Kyu Javascript
+function feast(beast, dish) {
+  //your function here
+  // P - Two Strings - name of beast and name of dish
+  // R - true if the name of the dish and beast both start and end with the
+  //      same letters, and false if they do not
+  // E - "great blue heron" "garlic naan" g and n = true
+  //           "brown bear", "bear claw" = false because b & r and then b & c
+  // P - if the first letter and the last letter of both beast and dish are
+  //    the same, return true, else return false
+
+  let firstBeastLetter = beast.slice(0, 1);
+  console.log(firstBeastLetter);
+  let lastBeastLetter = beast.slice(beast.length - 1);
+  console.log(lastBeastLetter);
+
+  let firstDishLetter = dish.slice(0, 1);
+  let lastDishLetter = dish.slice(dish.length - 1);
+
+  if (
+    firstBeastLetter == firstDishLetter &&
+    lastBeastLetter == lastDishLetter
+  ) {
+    return true;
+  } else if (
+    firstBeastLetter !== firstDishLetter ||
+    lastBeastLetter !== lastDishLetter
+  ) {
+    return false;
+  }
+}
