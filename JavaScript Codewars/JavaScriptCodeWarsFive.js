@@ -351,17 +351,12 @@ function points(games) {
   return totalPointsX;
 }
 
-//
-
+// Sentence Smash
 function smash(words) {
   // P = An array of words ["", "", ""]
   // R = Returns a string sentence ""
   // E = ['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'
   // P = Connect all the words in the array into one string
 
-  return (sentence = words
-    .toString()
-    .split(' ')
-    .toString()
-    .replaceAll(',', ' '));
+  return (sentence = words.join(' '));
 }
