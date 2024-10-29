@@ -315,3 +315,38 @@ function feast(beast, dish) {
     return false;
   }
 }
+
+// Total amount of points - 8 Kyu Javascript
+function points(games) {
+  // P An array of strings ["", "", ""]
+  // R Returns the number of points team x got in the championship
+  // E ["3:1", "2:2", "0:1"]
+  // P Check if the X won the game or not and assign the correct amount of points based
+  //.  off the results (3 for W, 0 for L, 1 for Tie)
+  let totalPointsX = 0;
+
+  // don't need this because the values are reset with each loop
+  // let value1 = 0;
+  // let value2 = 0;
+
+  for (string of games) {
+    console.log(string);
+    console.log(typeof string);
+    let value1 = string.charAt(0);
+    let value2 = string.charAt(string.length - 1);
+
+    console.log(value1, 'value1');
+    console.log(value2, 'value2');
+
+    if (+value1 > +value2) {
+      totalPointsX = totalPointsX + 3;
+    } else if (+value1 < value2) {
+      totalPointsX = totalPointsX;
+    } else if (+value1 == +value2) {
+      totalPointsX = totalPointsX + 1;
+    }
+  }
+  console.log(totalPointsX, 'totalPointsX');
+
+  return totalPointsX;
+}
