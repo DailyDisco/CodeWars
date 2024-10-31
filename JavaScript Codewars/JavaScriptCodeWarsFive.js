@@ -370,3 +370,14 @@ function sum(numbers) {
 
   return numbers.reduce((acc, cum) => acc + cum, 0);
 }
+
+// Convert a string to a number! = 8 Kyu Javascript
+const stringToNumber = function (str) {
+  // P = A string ""
+  // R = Return a number X
+  // E "1234" => 1234
+  // P = get the string and turn it into a number
+
+  // put your code here
+  return +str;
+};
