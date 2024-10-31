@@ -381,3 +381,18 @@ const stringToNumber = function (str) {
   // put your code here
   return +str;
 };
+
+// Reversed sequence 8 Kyu Javascript
+const reverseSeq = (n) => {
+  // P = A value n that is an int
+  // R = Returns an array of integers from n to 1 where n > 0
+  // E = n = 5, [5, 4, 3, 2, 1]
+  // P = Loop through the number n and push the numbers to a new array
+  let newArray = [];
+
+  for (let i = 1; i <= n; i++) {
+    newArray.push(i);
+  }
+
+  return newArray.reverse();
+};
