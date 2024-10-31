@@ -396,3 +396,26 @@ const reverseSeq = (n) => {
 
   return newArray.reverse();
 };
+
+// Square Every Digit 7 Kyu Javascript
+function squareDigits(num) {
+  // P = A number int
+  // R = Square the number
+  // E = 9119 = 811181 = 9 * 9 = 81, 1*1 = 1 = 811181
+  // P = Take the value of every number and square it then combine the answers
+
+  let splitNum = num.toString().split('');
+
+  let squaredNumsArray = [];
+
+  for (num of splitNum) {
+    squaredNumsArray.push(num * num);
+    console.log(squaredNumsArray);
+  }
+
+  const finalAnswer = +squaredNumsArray.join('');
+  console.log(squaredNumsArray.join(''), 'joined squared Array');
+  console.log(splitNum);
+
+  return finalAnswer;
+}
