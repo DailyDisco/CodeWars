@@ -315,3 +315,13 @@ function feast(beast, dish) {
     return false;
   }
 }
+
+// Sum Array = 8 Kyu Javascript
+function sum(numbers) {
+  // P = An array of numbers
+  // R = Returns the sum of the numbers
+  // E Input: [1, 5.2, 4, 0, -1], Output: 9.2
+  // P Take the array and add all the numbers up and return the total as a number
+
+  return numbers.reduce((acc, cum) => acc + cum, 0);
+}
