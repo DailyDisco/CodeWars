@@ -419,3 +419,14 @@ function squareDigits(num) {
 
   return finalAnswer;
 }
+
+// Opposite number - 8 Kyu Javascript
+function opposite(number) {
+  // P = number of type int negative and positive
+  // R = return the opposite of the number
+  // E = -1 = 1, -1 = 1
+  // P = get the number and return the - if more than or equal to 0, return the - if less than 0 or negative
+
+  //your code here
+  return number >= 0 ? -number : number * -1;
+}
