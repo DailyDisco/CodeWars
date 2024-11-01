@@ -430,3 +430,13 @@ function opposite(number) {
   //your code here
   return number >= 0 ? -number : number * -1;
 }
+
+// Sum of positive - 8 Kyu Javascript
+function positiveSum(arr) {
+  // P = An array of numbers = [1, 2, 3]
+  // R = sum of all the positive numbers and if there is nothing to sum return 0
+  // E = [1,-4,7,12] => 1 + 7 + 12 = 20
+  // P = Get the number and filter out non positive numbers, then reduce the array to get the sum
+
+  return arr.filter((x) => x > 0).reduce((acc, cum) => acc + cum, 0);
+}
