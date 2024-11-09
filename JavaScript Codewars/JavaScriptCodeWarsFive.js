@@ -440,3 +440,23 @@ function positiveSum(arr) {
 
   return arr.filter((x) => x > 0).reduce((acc, cum) => acc + cum, 0);
 }
+
+// Persistent Bugger - 6 Kyu Javascript
+function persistence(num) {
+  //code me
+
+  // set a count to keep track of how many times you've multiplied
+  let count = 0;
+
+  // while the number is not a single digit value do this
+  while (num.toString().split('').length !== 1) {
+    // set number = to the value of multiplying each of its values
+    num = num
+      .toString()
+      .split('')
+      .reduce((a, b) => a * b);
+    // update the multiplication counter
+    count++;
+  }
+  return count;
+}
