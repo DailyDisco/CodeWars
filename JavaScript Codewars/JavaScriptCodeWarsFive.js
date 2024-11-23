@@ -471,3 +471,32 @@ function move (position, roll) {
   
   return (roll * 2) + position
 }
+
+// Count the Digit - 7 Kyu
+function nbDig(n, d) {
+    // 
+    // P = N = an Int greater than or equal to 0, and D, an Int = to or between 0 and 9
+    // R = The amount of times that d is used in the squared digits, including if it's more than once in the same digit.
+    // E = n = 11011, d = 2; 
+    // P
+  let count = 0;
+  let squaredNumber = 0;
+  
+  // Loop through all the values between 0 and including n 
+  for (let i = 0; i <= n; i++) {
+    
+    // Square the number that you are currently on    
+    squaredNumber = i ** 2
+    
+    // Convert the number into a string so that you can split it to loop through it later.     
+    let splitNumber = squaredNumber.toString().split("")
+    
+    // Loop through all the digits in the product and increase the count if it includes variable = d
+    for (num of splitNumber) {
+      num.includes(d) ? count++ : null
+    }
+    
+  }
+  
+  return count
+}
