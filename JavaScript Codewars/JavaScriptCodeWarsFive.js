@@ -460,3 +460,14 @@ function persistence(num) {
   }
   return count;
 }
+
+// Terminal Game Move Function - 8 Kyu
+function move (position, roll) {
+  // return the new position
+  // P = An Int Position, and a Int Roll
+  // R = The new Position of the player
+  // E = Player at position 3, and player rolls a 6. 3 + (6 * 2) = 15
+  // P = Take the roll, and multiply it by two and add it to the starting position.
+  
+  return (roll * 2) + position
+}
