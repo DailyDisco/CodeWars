@@ -500,3 +500,19 @@ function nbDig(n, d) {
   
   return count
 }
+
+
+function past(h, m, s){
+
+  let total = 0
+  
+  let hoursToMilli = (h * 60 * 60) * 1000
+  
+  let minutesToMilli = (m * 60) * 1000
+  
+  let secondsToMilli = s * 1000
+  
+  total = hoursToMilli + minutesToMilli + secondsToMilli
+  
+  return total
+}
