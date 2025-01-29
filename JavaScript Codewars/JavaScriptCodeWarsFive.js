@@ -532,3 +532,31 @@ function filter_list(l) {
 
   return array;
 }
+
+function bouncingBall(h, bounce, window) {
+  // your code here
+  let count = 0;
+  let height = 0;
+
+  // h height, bounce = int, window = int
+  if (h > 0 && bounce < 1 && bounce > 0 && window < h) {
+    count = 1;
+
+    // how many times will the ball fall through the view of the window?
+
+    // Update the height remaining after each bounce
+    height = h * bounce;
+
+    // while that updated height is greater than window
+    // keep a count of the ball falling up and down the window each time
+    // also set the new height
+    while (height > window) {
+      count = count + 2;
+      height = height * bounce;
+    }
+
+    return count;
+  } else {
+    return -1;
+  }
+}
