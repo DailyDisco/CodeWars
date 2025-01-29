@@ -419,3 +419,116 @@ function squareDigits(num) {
 
   return finalAnswer;
 }
+
+// Opposite number - 8 Kyu Javascript
+function opposite(number) {
+  // P = number of type int negative and positive
+  // R = return the opposite of the number
+  // E = -1 = 1, -1 = 1
+  // P = get the number and return the - if more than or equal to 0, return the - if less than 0 or negative
+
+  //your code here
+  return number >= 0 ? -number : number * -1;
+}
+
+// Sum of positive - 8 Kyu Javascript
+function positiveSum(arr) {
+  // P = An array of numbers = [1, 2, 3]
+  // R = sum of all the positive numbers and if there is nothing to sum return 0
+  // E = [1,-4,7,12] => 1 + 7 + 12 = 20
+  // P = Get the number and filter out non positive numbers, then reduce the array to get the sum
+
+  return arr.filter((x) => x > 0).reduce((acc, cum) => acc + cum, 0);
+}
+
+// Persistent Bugger - 6 Kyu Javascript
+function persistence(num) {
+  //code me
+
+  // set a count to keep track of how many times you've multiplied
+  let count = 0;
+
+  // while the number is not a single digit value do this
+  while (num.toString().split('').length !== 1) {
+    // set number = to the value of multiplying each of its values
+    num = num
+      .toString()
+      .split('')
+      .reduce((a, b) => a * b);
+    // update the multiplication counter
+    count++;
+  }
+  return count;
+}
+
+// Terminal Game Move Function - 8 Kyu
+function move(position, roll) {
+  // return the new position
+  // P = An Int Position, and a Int Roll
+  // R = The new Position of the player
+  // E = Player at position 3, and player rolls a 6. 3 + (6 * 2) = 15
+  // P = Take the roll, and multiply it by two and add it to the starting position.
+
+  return roll * 2 + position;
+}
+
+// Count the Digit - 7 Kyu
+function nbDig(n, d) {
+  //
+  // P = N = an Int greater than or equal to 0, and D, an Int = to or between 0 and 9
+  // R = The amount of times that d is used in the squared digits, including if it's more than once in the same digit.
+  // E = n = 11011, d = 2;
+  // P
+  let count = 0;
+  let squaredNumber = 0;
+
+  // Loop through all the values between 0 and including n
+  for (let i = 0; i <= n; i++) {
+    // Square the number that you are currently on
+    squaredNumber = i ** 2;
+
+    // Convert the number into a string so that you can split it to loop through it later.
+    let splitNumber = squaredNumber.toString().split('');
+
+    // Loop through all the digits in the product and increase the count if it includes variable = d
+    for (num of splitNumber) {
+      num.includes(d) ? count++ : null;
+    }
+  }
+
+  return count;
+}
+
+// Beginner Series #2 Clock - Level 8 Kyu
+function past(h, m, s) {
+  let total = 0;
+
+  let hoursToMilli = h * 60 * 60 * 1000;
+
+  let minutesToMilli = m * 60 * 1000;
+
+  let secondsToMilli = s * 1000;
+
+  total = hoursToMilli + minutesToMilli + secondsToMilli;
+
+  return total;
+}
+
+// List Filtering - 7 Kyu Javascript
+function filter_list(l) {
+  // Return a new array with the strings filtered out
+  // P - A list of non-negative integers (x >= 0) and strings
+  // R - Returns a new list (array) with the strings filtered out
+  // E - filter_list([1,2,'a','b']) == [1,2] = Take out strings
+  // P - filter through the list and check the typeof the value and if it's a string pop it
+
+  let array = [];
+
+  for (value of l) {
+    if (typeof value === 'number') {
+      array.push(value);
+    }
+  }
+
+  return array;
+}
