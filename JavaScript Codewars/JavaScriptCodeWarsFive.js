@@ -560,3 +560,28 @@ function bouncingBall(h, bounce, window) {
     return -1;
   }
 }
+
+function SeriesSum(n) {
+  // Happy Coding ^_^
+  // P = n = int
+  // R = return the nth term of the series
+  // E =
+  //     n
+  //     1 --> 1 --> "1.00"
+  //     2 --> 1 + 1/4 --> "1.25"
+  //     5 --> 1 + 1/4 + 1/7 + 1/10 + 1/13 --> "1.57"
+
+  let count = 0;
+
+  for (let i = 0; i < n; i++) {
+    if (n == 1) {
+      return n.toFixed(2);
+    }
+
+    count = count + 1 / (i * 3 + 1);
+
+    console.log(count, 'count after 0');
+  }
+
+  return count.toFixed(2);
+}
