@@ -245,3 +245,14 @@ def leo(oscar):
         return "Leo got one already!"
     else:
         return "When will you give Leo an Oscar?"
+
+
+def uni_total(s):
+    pass
+    return sum(ord(c) for c in s)
+
+
+def integrate(coefficient, exponent):
+    integratedExponent = exponent + 1
+    integratedCoefficient = coefficient / integratedExponent
+    return str(int(integratedCoefficient)) + "x^" + str(integratedExponent)
