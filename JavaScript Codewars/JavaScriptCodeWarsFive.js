@@ -585,3 +585,32 @@ function SeriesSum(n) {
 
   return count.toFixed(2);
 }
+
+function minMax(arr) {
+  // P = An array, that has the min and max value, sometimes the array has 1 and it is both the min and max
+  // R = An array with the minimum and maximum number = [min, max]
+  // E = [2334454,5] --> [5,2334454], [1]         --> [1,1]
+  // P = if the array has one value that is the min and max
+
+  let min = arr[0];
+  let max = arr[0];
+
+  if (arr.length == 1) {
+    return [arr[0], arr[0]];
+  }
+
+  if (arr.length > 1) {
+    console.log(arr);
+    for (num of arr) {
+      console.log(num);
+
+      min = num < min ? (min = num) : min;
+      console.log(min);
+
+      // Keep track of highest number
+      max = num > max ? (max = num) : max;
+    }
+  }
+
+  return [min, max]; // fix me!
+}
