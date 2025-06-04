@@ -615,6 +615,7 @@ function minMax(arr) {
   return [min, max]; // fix me!
 }
 
+// 7 Kyu Max Diff - Easy
 function maxDiff(list) {
   if (!list.length) return 0;
 
