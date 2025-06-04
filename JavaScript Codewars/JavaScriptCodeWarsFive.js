@@ -614,3 +614,9 @@ function minMax(arr) {
 
   return [min, max]; // fix me!
 }
+
+function maxDiff(list) {
+  if (!list.length) return 0;
+
+  return Math.max(...list) - Math.min(...list);
+}
