@@ -6,7 +6,7 @@ export function howManyLightsabersDoYouOwn(name?: any): number {
 
 // The question mark (?) after name attribute marks it as optional.
 
-// 8 Kyu Hello, Name or World!
+// Hello, Name or World! 8 Kyu Typescript
 export function hello(name = ''): string {
   if (!name) {
     return 'Hello, World!';
