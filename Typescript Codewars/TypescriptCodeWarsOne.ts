@@ -34,3 +34,10 @@ export function mango(quantity: number, price: number): number {
 
   return finalQuantity;
 }
+
+// Type of Sum 8 Kyu Typescript
+export function typeOfSum(a: any, b: any): string {
+  let sum = a + b;
+
+  return typeof sum;
+}
