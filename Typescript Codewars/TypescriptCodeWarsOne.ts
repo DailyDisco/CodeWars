@@ -48,3 +48,10 @@ export function twiceAsOld(dadYearsOld: number, sonYearsOld: number): number {
 
   return Math.abs(yearsAgo);
 }
+
+// Is Really NaN 8 Kyu Typescript
+export function isReallyNaN(val: any): boolean {
+  // return isNaN(val);  // wasn't working as planned :-(
+  // use isNaN to check the val is NaN but also check the type to make sure
+  return typeof val === 'number' && isNaN(val);
+}
