@@ -27,3 +27,4 @@ func Hero(bullets, dragons int) bool {
     return false
   }
 }
+

@@ -41,3 +41,10 @@ export function typeOfSum(a: any, b: any): string {
 
   return typeof sum;
 }
+
+// Twice as old 8 Kyu Typescript
+export function twiceAsOld(dadYearsOld: number, sonYearsOld: number): number {
+  let yearsAgo = dadYearsOld - sonYearsOld * 2;
+
+  return Math.abs(yearsAgo);
+}
