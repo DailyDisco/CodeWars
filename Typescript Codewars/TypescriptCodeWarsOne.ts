@@ -18,3 +18,19 @@ export function hello(name = ''): string {
 
   return `Hello, ${correctName}!`;
 }
+
+// Price of Mangos 8 Kyu Typescript
+export function mango(quantity: number, price: number): number {
+  // P = number of mangos, price of mangos
+  // R = Total Cost of Mangos
+  // E = 2 mangos for 3 dollars each = 6
+  // E2 = 3 mangos for 3 dollars each = 6 (every third mango is free)
+  // P = To calculate the total cost:
+  //     1. Divide quantity by 3 and floor it to get number of free mangos
+  //     2. Subtract free mangos from total quantity to get paid mangos
+  //     3. Multiply paid mangos by price to get final cost
+
+  let finalQuantity = (quantity - Math.floor(quantity / 3)) * price;
+
+  return finalQuantity;
+}
