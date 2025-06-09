@@ -78,3 +78,27 @@ export function shark(
     return 'Shark Bait!';
   }
 }
+
+// Check same case 8 Kyu Typescript
+export function sameCase(a: string, b: string): number {
+  // P = two letters, a and b
+  // R = Return -1 if either one of the characters is not a alphabetic letter
+  // Return 1 if they're both the same case, return 0 if they are not
+  // E: 'a' and 'g' returns 1
+  // P: use regex to test for alphabetical letter, then check the upppercase or lowercase status of everything and compare it
+
+  // regex check for alphabetical letter
+  let isLetterTest = (char: string) => /^[A-Za-z]+$/.test(char);
+
+  // check if it's a letter first
+
+  if (!isLetterTest(a) || !isLetterTest(b)) {
+    return -1;
+  }
+
+  // check if they are both the same case
+  const bothUpper = a === a.toUpperCase() && b === b.toUpperCase();
+  const bothLower = a === a.toLowerCase() && b === b.toLowerCase();
+
+  return bothUpper || bothLower ? 1 : 0;
+}
