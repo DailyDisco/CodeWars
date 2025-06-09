@@ -55,3 +55,26 @@ export function isReallyNaN(val: any): boolean {
   // use isNaN to check the val is NaN but also check the type to make sure
   return typeof val === 'number' && isNaN(val);
 }
+
+// Holiday VI - Shark Pontoon 8 Kyu Typescript
+export function shark(
+  pontoonDistance: number,
+  sharkDistance: number,
+  youSpeed: number,
+  sharkSpeed: number,
+  dolphin: boolean
+): string {
+  // P = sharkDistance, sharkSpeed, pontoonDistance, youSpeed, dolphin
+
+  let finalSharkSpeed = sharkSpeed;
+
+  if (dolphin) {
+    finalSharkSpeed = sharkSpeed / 2;
+  }
+
+  if (sharkDistance / finalSharkSpeed >= pontoonDistance / youSpeed) {
+    return 'Alive!';
+  } else {
+    return 'Shark Bait!';
+  }
+}
