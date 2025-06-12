@@ -143,3 +143,37 @@ export var var14Undefined: undefined = undefined;
 export function var15NeverFunction(): never {
   throw new Error('This will never return');
 }
+
+// Minimize Sum Of Array (Array Series #1) 8 Kyu Typescript
+export function minSum(arr: number[]): number {
+  // P = An array of integers [1,2,3,4]
+
+  // R = Find the minimum sum which is obtained from summing each two integers product
+
+  // E = [5,4,2,1] returns 22 because 5 * 2 + 3 * 4 = 22
+
+  // Pseudocode
+  // 1. Sort the array so that you can get the lowest product
+  // 2. Loop through each two integers and multiply them
+  // 3. Add them to the total
+  // 4. Repeat until no more are left.
+  // 5. Return the sum total
+
+  let total = 0;
+
+  let sortedArray = arr.sort((a, b) => a - b);
+
+  console.log(arr[0], arr[0 + 1]);
+
+  for (let i = 0; i < arr.length / 2; i++) {
+    let product = 0;
+
+    product = arr[i] * arr[sortedArray.length - 1 - i];
+
+    console.log(product);
+
+    total += product;
+  }
+
+  return total;
+}
