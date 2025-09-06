@@ -177,3 +177,55 @@ export function minSum(arr: number[]): number {
 
   return total;
 }
+
+// ####################
+
+// Shorter Concat [reverse longer] 7 Kyu Typescript
+
+export function shorterReverseLonger(a: string, b: string): string {
+  // P = We are taking in two strings
+  // R = We want to return a string of shorter+reverse(longer)+shorter
+  // E = long & longer = longregnollong
+  // P = First we must check if a or b are empty or if both are empty
+
+  let longestReversed = '';
+  let shortest = '';
+
+  if (a.length == 0) {
+    return a + b.split('').reverse().join('') + a;
+  }
+
+  if (b.length == 0) {
+    return b + a.split('').reverse().join('') + b;
+  }
+
+  if (a.length === b.length) {
+    longestReversed = a.split('').reverse().join('');
+
+    shortest = b;
+
+    return shortest + longestReversed + shortest;
+  } else if (a.length > b.length) {
+    console.log(a);
+    let longestReversed = a.split('').reverse().join('');
+    console.log(longestReversed);
+
+    console.log(a);
+    let shortest = b;
+    console.log(shortest);
+
+    return shortest + longestReversed + shortest;
+  } else if (b.length > a.length) {
+    console.log(b);
+    let longestReversed = b.split('').reverse().join('');
+    console.log(longestReversed);
+
+    console.log(a);
+    let shortest = a;
+    console.log(shortest);
+
+    return shortest + longestReversed + shortest;
+  }
+
+  return '';
+}
